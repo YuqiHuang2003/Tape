@@ -1,0 +1,42 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv*/
+*.egg-info/
+build/
+dist/
+
+# Local downloads, generated runs, and large checkpoints
+models/
+data/
+runs/
+outputs/
+logs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Credentials and local machine configuration
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+
+# LaTeX build products; keep the .tex source
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk

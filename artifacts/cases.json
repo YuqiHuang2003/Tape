@@ -1,0 +1,29 @@
+{
+  "cases": {
+    "ernie_32": {
+      "family": "ernie",
+      "mode": "joint"
+    },
+    "ernie_48": {
+      "family": "ernie",
+      "mode": "joint"
+    },
+    "ernie_48_allocation_only": {
+      "family": "ernie",
+      "mode": "allocation_only"
+    },
+    "ernie_48_identity_only": {
+      "family": "ernie",
+      "mode": "identity_only"
+    },
+    "granite_16": {
+      "family": "granite",
+      "mode": "joint"
+    },
+    "granite_24": {
+      "family": "granite",
+      "mode": "joint"
+    }
+  },
+  "primary_metric": "acc_norm"
+}

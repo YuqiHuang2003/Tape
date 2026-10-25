@@ -1,0 +1,447 @@
+{
+  "gpu_count_per_run": 1,
+  "records": [
+    {
+      "candidate_count": 256,
+      "case": "granite_24",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/granite_24/evaluations/tape_multistart.json": "1b5755ede9b557aabda9e5348ced72a20b847348b9c094401a8d51678efce1d0",
+        "results/runs/uniform_tape_20261023/granite_24/state.json": "9be54b856837c09d00aaa04f02d95a0408de0309cd0c4ed3c353a5774461a72b",
+        "results/runs/uniform_tape_20261023/granite_24/uniform_norm/search.json": "59340a31c6f2b46bd5b3a49e7eee1c25517d3a3486752dde1c06d7a6130defb9"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": 295.6287594512105,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": true
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "Granite 75%",
+      "last_invocation_elapsed_seconds": 976.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 282,
+      "packages": {
+        "accelerate": "1.1.1",
+        "datasets": "3.1.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.46.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 295.6287594512105,
+      "search_timing_kind": "fresh_candidate_inference",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 100.538546875,
+      "test_peak_device_memory_bytes": 6486121984,
+      "test_reused": false,
+      "test_wall_seconds": 100.54009064659476
+    },
+    {
+      "candidate_count": 256,
+      "case": "granite_16",
+      "evidence": {
+        "results/runs/granite50_rerun_20261025/granite_16/evaluations/tape_multistart.json": "bf1f7898c886d0c50ec64155bdc5677cfced3c6ff9c5d40b531bd4d43513daac",
+        "results/runs/granite50_rerun_20261025/granite_16/state.json": "2a1051a83fd39434fa3829dd3ccd3b25749fba1f32efc8168f308555d273b6f4",
+        "results/runs/granite50_rerun_20261025/granite_16/uniform_norm/search.json": "3afd8a3c3b67f5a5406deb37862edc0d838652a3aeb227c6fe798490ebd31b64"
+      },
+      "external_cache_hits": 10,
+      "full_search_wall_seconds": 232.61454468593,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": true
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "Granite 50%, main result",
+      "last_invocation_elapsed_seconds": 399.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 272,
+      "packages": {
+        "accelerate": "1.1.1",
+        "datasets": "3.1.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.46.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 232.61454468593,
+      "search_timing_kind": "external_score_reuse",
+      "source_run": "results/runs/granite50_rerun_20261025",
+      "test_gpu_seconds": 83.1598203125,
+      "test_peak_device_memory_bytes": 6453485056,
+      "test_reused": false,
+      "test_wall_seconds": 83.16123698279262
+    },
+    {
+      "candidate_count": 256,
+      "case": "ernie_48",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/ernie_48/evaluations/tape_multistart.json": "4c7c549fda6f45895fb96fc2cc5c238a3fdabd57aca5d5c5decf9e1b3e99f865",
+        "results/runs/uniform_tape_20261023/ernie_48/state.json": "ff617c3b2c96d01f9eb47b529637281f33c7fd24cd79ba6a7ece0f083fe119c5",
+        "results/runs/uniform_tape_20261023/ernie_48/uniform_norm/search.json": "20e720f695778b69616c0df6c84d5dca63c6aacbb1d3a1dab1af33d4d5021328"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": null,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": false
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "ERNIE 75%",
+      "last_invocation_elapsed_seconds": 1124.0,
+      "local_cache_hits": 273,
+      "new_proxy_scores_last_invocation": 9,
+      "packages": {
+        "accelerate": "1.7.0",
+        "datasets": "3.6.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.53.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 2.1080635748803616,
+      "search_timing_kind": "cached_resume_replay",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 282.89659375,
+      "test_peak_device_memory_bytes": 46187218432,
+      "test_reused": false,
+      "test_wall_seconds": 282.9006918743253
+    },
+    {
+      "candidate_count": 256,
+      "case": "ernie_32",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/ernie_32/evaluations/tape_multistart.json": "803899d0b7f0f2f474f9a1aa660aa980ebb9cc0a4ccb2ab29ac95a6d37e2f60d",
+        "results/runs/uniform_tape_20261023/ernie_32/state.json": "cbfe0b95375ead4931c30a2f3601df1d8e4c3f6df63fed1eefee34ea7e96ecc0",
+        "results/runs/uniform_tape_20261023/ernie_32/uniform_norm/search.json": "31a42c5f03520165f9178ce0721ce9e1806078ee2e14f81cbf886264eb07dd02"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": 4500.421510528773,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": false
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "ERNIE 50%",
+      "last_invocation_elapsed_seconds": 6687.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 282,
+      "packages": {
+        "accelerate": "1.7.0",
+        "datasets": "3.6.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.53.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 4500.421510528773,
+      "search_timing_kind": "fresh_candidate_inference",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 210.2505,
+      "test_peak_device_memory_bytes": 45619219968,
+      "test_reused": false,
+      "test_wall_seconds": 210.25444127991796
+    },
+    {
+      "candidate_count": 256,
+      "case": "ernie_48_identity_only",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/ernie_48_identity_only/evaluations/tape_multistart.json": "1e88b4054ad22f47c042cd1d17dbb4b7ba83e59de77d1667df324c80e9dd901d",
+        "results/runs/uniform_tape_20261023/ernie_48_identity_only/state.json": "895bb0f624f7a2c7f18a66a773969946f7c7247b456251dcab94d977f0b8057c",
+        "results/runs/uniform_tape_20261023/ernie_48_identity_only/uniform_norm/search.json": "f778a9a44ec4677b4db837834032d2903d5ffb90a898591c515a7b90760fa909"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": 6355.896702390164,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": false
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "ERNIE 75% w/o Layer Allocation",
+      "last_invocation_elapsed_seconds": 9060.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 282,
+      "packages": {
+        "accelerate": "1.7.0",
+        "datasets": "3.6.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.53.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 6355.896702390164,
+      "search_timing_kind": "fresh_candidate_inference",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 288.81746875,
+      "test_peak_device_memory_bytes": 46032301568,
+      "test_reused": false,
+      "test_wall_seconds": 288.8213311173022
+    },
+    {
+      "candidate_count": 256,
+      "case": "ernie_48_allocation_only",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/ernie_48_allocation_only/evaluations/tape_multistart.json": "5db739593debebda5bf9df548dc0d9babe0545670a5c9bb407e00f3a057e9861",
+        "results/runs/uniform_tape_20261023/ernie_48_allocation_only/state.json": "2a35c9c662db52f77ae46ebeec739ae037c123ca85668d1502cfe6cd69ca21bf",
+        "results/runs/uniform_tape_20261023/ernie_48_allocation_only/uniform_norm/search.json": "db3fe25fa17f7819c2f301fded7287312095a0caa489a7c2d1bd4bf019284c7d"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": 6204.0051653161645,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": false
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "ERNIE 75% w/o Identity Search",
+      "last_invocation_elapsed_seconds": 9439.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 282,
+      "packages": {
+        "accelerate": "1.7.0",
+        "datasets": "3.6.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.53.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 6204.0051653161645,
+      "search_timing_kind": "fresh_candidate_inference",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 283.474,
+      "test_peak_device_memory_bytes": 46187479040,
+      "test_reused": false,
+      "test_wall_seconds": 283.4804203994572
+    },
+    {
+      "candidate_count": 256,
+      "case": "granite_16",
+      "evidence": {
+        "results/runs/uniform_tape_20261023/granite_16/evaluations/tape_multistart.json": "bd01bc8e4ca2568725df15a05badad41a42e7a248596e3b64cb8a4f8a12506af",
+        "results/runs/uniform_tape_20261023/granite_16/state.json": "4bf1f6be5e2900fdb7eb11a66833339e0dfce7f9e46399b1117d57f88296217a",
+        "results/runs/uniform_tape_20261023/granite_16/uniform_norm/search.json": "2ddb5c47f5a99a159d1c9d365744e18db3202421648aae8bce2de1e93ef59551"
+      },
+      "external_cache_hits": 0,
+      "full_search_wall_seconds": 242.51325649768114,
+      "hardware": {
+        "cublas_workspace_config": {
+          "configured_now": false,
+          "cuda_initialized_at_check": true,
+          "valid": true,
+          "value": ":4096:8",
+          "verified_before_cuda_initialization_in_process": true
+        },
+        "cuda_available": true,
+        "cuda_runtime": "12.4",
+        "cudnn": 90100,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": true,
+        "deterministic_algorithms": true,
+        "devices": [
+          {
+            "compute_capability": [
+              8,
+              0
+            ],
+            "index": 0,
+            "name": "NVIDIA A100-SXM4-80GB",
+            "total_memory_bytes": 84974239744
+          }
+        ],
+        "driver_version": [
+          "550.144.03"
+        ]
+      },
+      "label": "Granite 50%, archived run",
+      "last_invocation_elapsed_seconds": 814.0,
+      "local_cache_hits": 0,
+      "new_proxy_scores_last_invocation": 282,
+      "packages": {
+        "accelerate": "1.1.1",
+        "datasets": "3.1.0",
+        "lm_eval": "0.4.8",
+        "networkx": "3.4.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.4.5",
+        "torch": "2.5.1",
+        "transformers": "4.46.3",
+        "yaml": "6.0.2"
+      },
+      "python": "3.10.21",
+      "search_recorded_wall_seconds": 242.51325649768114,
+      "search_timing_kind": "fresh_candidate_inference",
+      "source_run": "results/runs/uniform_tape_20261023",
+      "test_gpu_seconds": 83.2458359375,
+      "test_peak_device_memory_bytes": 6487039488,
+      "test_reused": false,
+      "test_wall_seconds": 83.2468566969037
+    }
+  ],
+  "repository_url": "https://github.com/YuqiHuang2003/Tape"
+}

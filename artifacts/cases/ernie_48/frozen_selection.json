@@ -1,0 +1,1522 @@
+{
+  "baselines": {
+    "frequency": {
+      "mask_sha256": "45bd6e69936d6ded0e6c56c3d5ae8b591fa21cdaa8fd65db787cdf3916273bcd",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1418073635355623,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.664608195459612,
+          1.6190065316115128
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.7109375,
+            "objective": 0.664608195459612,
+            "objective_choice_cross_entropy": 0.8419613558994382,
+            "raw_choice_cross_entropy": 1.4184007256100395,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13254871414013344
+          },
+          "openbookqa": {
+            "acc": 0.23046875,
+            "acc_norm": 0.3828125,
+            "objective": 1.6190065316115128,
+            "objective_choice_cross_entropy": 2.083211214703339,
+            "raw_choice_cross_entropy": 6.066357469103497,
+            "samples": 256,
+            "teacher_candidate_kl": 0.2263924823360342
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 1,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    "historical_tape": {
+      "mask_sha256": "c84bb6bcf47536ec07d03f5fd96dbea3e4ca8c1c1dceb468053431ec03686fdc",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9944428835156132,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5742437906352652,
+          1.414641976395961
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.78515625,
+            "acc_norm": 0.7734375,
+            "objective": 0.5742437906352652,
+            "objective_choice_cross_entropy": 0.722698436023344,
+            "raw_choice_cross_entropy": 1.123637560840902,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12887985447102845
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.41796875,
+            "objective": 1.414641976395961,
+            "objective_choice_cross_entropy": 1.8398836779275127,
+            "raw_choice_cross_entropy": 5.3542975585138315,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13891687180130627
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 3,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    "hybrid": {
+      "mask_sha256": "81681f3cc4db92f5c187fad313b225c05e4e222a9d166a38f2be5ec3d6c44f77",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.128524699311086,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6578195303603255,
+          1.5992298682618464
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.734375,
+            "acc_norm": 0.73828125,
+            "objective": 0.6578195303603255,
+            "objective_choice_cross_entropy": 0.8343119602275532,
+            "raw_choice_cross_entropy": 1.4446916474502682,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1283422407586424
+          },
+          "openbookqa": {
+            "acc": 0.2578125,
+            "acc_norm": 0.3671875,
+            "objective": 1.5992298682618464,
+            "objective_choice_cross_entropy": 2.073998653457375,
+            "raw_choice_cross_entropy": 5.9919392071714395,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1749235126752609
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 2,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    "reap": {
+      "mask_sha256": "59030b85afa02fa46fc5bbb3ccd365ddfc4ca877430679310675f5db24a87b64",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0915590688019887,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6583317977805871,
+          1.5247863398233903
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.75,
+            "acc_norm": 0.7421875,
+            "objective": 0.6583317977805871,
+            "objective_choice_cross_entropy": 0.836780152478392,
+            "raw_choice_cross_entropy": 1.3565914030895383,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12298673368717261
+          },
+          "openbookqa": {
+            "acc": 0.265625,
+            "acc_norm": 0.3828125,
+            "objective": 1.5247863398233903,
+            "objective_choice_cross_entropy": 1.9726949725100487,
+            "raw_choice_cross_entropy": 5.812999603341821,
+            "samples": 256,
+            "teacher_candidate_kl": 0.18106044176341457
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 0,
+          "variant": "uniform_norm"
+        }
+      ]
+    }
+  },
+  "frozen_at": "2026-10-23T06:46:38+00:00",
+  "holdout_candidates": [
+    {
+      "mask_sha256": "59030b85afa02fa46fc5bbb3ccd365ddfc4ca877430679310675f5db24a87b64",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0915590688019887,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6583317977805871,
+          1.5247863398233903
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.75,
+            "acc_norm": 0.7421875,
+            "objective": 0.6583317977805871,
+            "objective_choice_cross_entropy": 0.836780152478392,
+            "raw_choice_cross_entropy": 1.3565914030895383,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12298673368717261
+          },
+          "openbookqa": {
+            "acc": 0.265625,
+            "acc_norm": 0.3828125,
+            "objective": 1.5247863398233903,
+            "objective_choice_cross_entropy": 1.9726949725100487,
+            "raw_choice_cross_entropy": 5.812999603341821,
+            "samples": 256,
+            "teacher_candidate_kl": 0.18106044176341457
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 0,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "45bd6e69936d6ded0e6c56c3d5ae8b591fa21cdaa8fd65db787cdf3916273bcd",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1418073635355623,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.664608195459612,
+          1.6190065316115128
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.7109375,
+            "objective": 0.664608195459612,
+            "objective_choice_cross_entropy": 0.8419613558994382,
+            "raw_choice_cross_entropy": 1.4184007256100395,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13254871414013344
+          },
+          "openbookqa": {
+            "acc": 0.23046875,
+            "acc_norm": 0.3828125,
+            "objective": 1.6190065316115128,
+            "objective_choice_cross_entropy": 2.083211214703339,
+            "raw_choice_cross_entropy": 6.066357469103497,
+            "samples": 256,
+            "teacher_candidate_kl": 0.2263924823360342
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 1,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "81681f3cc4db92f5c187fad313b225c05e4e222a9d166a38f2be5ec3d6c44f77",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.128524699311086,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6578195303603255,
+          1.5992298682618464
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.734375,
+            "acc_norm": 0.73828125,
+            "objective": 0.6578195303603255,
+            "objective_choice_cross_entropy": 0.8343119602275532,
+            "raw_choice_cross_entropy": 1.4446916474502682,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1283422407586424
+          },
+          "openbookqa": {
+            "acc": 0.2578125,
+            "acc_norm": 0.3671875,
+            "objective": 1.5992298682618464,
+            "objective_choice_cross_entropy": 2.073998653457375,
+            "raw_choice_cross_entropy": 5.9919392071714395,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1749235126752609
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 2,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "c84bb6bcf47536ec07d03f5fd96dbea3e4ca8c1c1dceb468053431ec03686fdc",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9944428835156132,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5742437906352652,
+          1.414641976395961
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.78515625,
+            "acc_norm": 0.7734375,
+            "objective": 0.5742437906352652,
+            "objective_choice_cross_entropy": 0.722698436023344,
+            "raw_choice_cross_entropy": 1.123637560840902,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12887985447102845
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.41796875,
+            "objective": 1.414641976395961,
+            "objective_choice_cross_entropy": 1.8398836779275127,
+            "raw_choice_cross_entropy": 5.3542975585138315,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13891687180130627
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 3,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "ad90f7b8247f2e48cf2d07c0047dca6b210830a98a7f61f884b75279cf5a28e5",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0892560027296088,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6594236532180404,
+          1.5190883522411769
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.75390625,
+            "acc_norm": 0.7421875,
+            "objective": 0.6594236532180404,
+            "objective_choice_cross_entropy": 0.8388128277327865,
+            "raw_choice_cross_entropy": 1.3554411453869937,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1212561296738022
+          },
+          "openbookqa": {
+            "acc": 0.265625,
+            "acc_norm": 0.3828125,
+            "objective": 1.5190883522411769,
+            "objective_choice_cross_entropy": 1.9662333482220975,
+            "raw_choice_cross_entropy": 5.798637700742666,
+            "samples": 256,
+            "teacher_candidate_kl": 0.17765336429841488
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 4,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "d976fa10f85e12d4019e00dc8461815e79b810033af1cd97cf7b1a8617b4bd40",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.139579302389504,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.663073998125065,
+          1.616084606653943
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.70703125,
+            "objective": 0.663073998125065,
+            "objective_choice_cross_entropy": 0.8398484551742238,
+            "raw_choice_cross_entropy": 1.3982684111328072,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13275062697758805
+          },
+          "openbookqa": {
+            "acc": 0.23046875,
+            "acc_norm": 0.3828125,
+            "objective": 1.616084606653943,
+            "objective_choice_cross_entropy": 2.0792091245260993,
+            "raw_choice_cross_entropy": 6.068594892284846,
+            "samples": 256,
+            "teacher_candidate_kl": 0.2267110530374737
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 5,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "dba1a6f699c93f5514c0f1b5875d174ccc1677afa3d06e67f00d159bdd916962",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1279247154864733,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6584769697321344,
+          1.5973724612408122
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.734375,
+            "acc_norm": 0.73828125,
+            "objective": 0.6584769697321344,
+            "objective_choice_cross_entropy": 0.8360415166482833,
+            "raw_choice_cross_entropy": 1.4488853654042861,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12578332898368744
+          },
+          "openbookqa": {
+            "acc": 0.25390625,
+            "acc_norm": 0.375,
+            "objective": 1.5973724612408122,
+            "objective_choice_cross_entropy": 2.0723631240841995,
+            "raw_choice_cross_entropy": 5.999773841025037,
+            "samples": 256,
+            "teacher_candidate_kl": 0.17240047271065118
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 6,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "55c7c4d409a04a14ace7595e8949516185b2e9d787543f7a593d933d6ee5b0d9",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9962569521102392,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5728623945775799,
+          1.4196515096428985
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.80078125,
+            "acc_norm": 0.78515625,
+            "objective": 0.5728623945775799,
+            "objective_choice_cross_entropy": 0.7206984750351544,
+            "raw_choice_cross_entropy": 1.1133722364664675,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12935415320485658
+          },
+          "openbookqa": {
+            "acc": 0.2890625,
+            "acc_norm": 0.41796875,
+            "objective": 1.4196515096428985,
+            "objective_choice_cross_entropy": 1.845417514169543,
+            "raw_choice_cross_entropy": 5.347824610752694,
+            "samples": 256,
+            "teacher_candidate_kl": 0.14235349606296466
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 7,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "5d658141037e9d305942d6e4a8dfedaa54c6e50b1577f78022e41c1dd4a914d7",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0899611828781421,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6572767771500585,
+          1.5226455886062258
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.74609375,
+            "acc_norm": 0.75,
+            "objective": 0.6572767771500585,
+            "objective_choice_cross_entropy": 0.8352602277311938,
+            "raw_choice_cross_entropy": 1.3546094451092987,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12332642540665281
+          },
+          "openbookqa": {
+            "acc": 0.2734375,
+            "acc_norm": 0.3828125,
+            "objective": 1.5226455886062258,
+            "objective_choice_cross_entropy": 1.9716075299536322,
+            "raw_choice_cross_entropy": 5.8092915978308515,
+            "samples": 256,
+            "teacher_candidate_kl": 0.17575976456400655
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 8,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "3528882f6c55c2438d9389de6ae4c1cfa12f2585ca7610818a3e2175f26ded28",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1438867619519701,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6651985724088189,
+          1.6225749514951215
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.75,
+            "acc_norm": 0.7109375,
+            "objective": 0.6651985724088189,
+            "objective_choice_cross_entropy": 0.8434433365027927,
+            "raw_choice_cross_entropy": 1.4141366870952616,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13046428012689695
+          },
+          "openbookqa": {
+            "acc": 0.21875,
+            "acc_norm": 0.359375,
+            "objective": 1.6225749514951215,
+            "objective_choice_cross_entropy": 2.088953345995579,
+            "raw_choice_cross_entropy": 6.056663352816313,
+            "samples": 256,
+            "teacher_candidate_kl": 0.22343976799374926
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 9,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "8309bf1767788c0f05925184be77660afaf51fe6cd17f3d459f150f1e47e7e7f",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1213582732682454,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6455307183399218,
+          1.5971858281965692
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.74609375,
+            "acc_norm": 0.7421875,
+            "objective": 0.6455307183399218,
+            "objective_choice_cross_entropy": 0.82016021090257,
+            "raw_choice_cross_entropy": 1.3603446732466633,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12164224065197761
+          },
+          "openbookqa": {
+            "acc": 0.26953125,
+            "acc_norm": 0.37109375,
+            "objective": 1.5971858281965692,
+            "objective_choice_cross_entropy": 2.071671850363733,
+            "raw_choice_cross_entropy": 5.955969214392185,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1737277616950781
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 10,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "87f08108886e2f34d1f83dbf83b19b8bfe2eb23fe68d7af356d184e789d8a174",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9998708900479356,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5817199275306177,
+          1.4180218525652535
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.78125,
+            "acc_norm": 0.77734375,
+            "objective": 0.5817199275306177,
+            "objective_choice_cross_entropy": 0.7326820344686584,
+            "raw_choice_cross_entropy": 1.1547234691441204,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12883360671649596
+          },
+          "openbookqa": {
+            "acc": 0.2890625,
+            "acc_norm": 0.41796875,
+            "objective": 1.4180218525652535,
+            "objective_choice_cross_entropy": 1.8439169624726295,
+            "raw_choice_cross_entropy": 5.330455998687596,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1403365228431256
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 11,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "402605986111d520ffb1025344de7e1fb920a67db93d44ac4faea1bfa6735852",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0963883896243123,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6566278992383595,
+          1.5361488800102652
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.7578125,
+            "objective": 0.6566278992383595,
+            "objective_choice_cross_entropy": 0.8360319705910964,
+            "raw_choice_cross_entropy": 1.3321912528130888,
+            "samples": 256,
+            "teacher_candidate_kl": 0.11841568518014904
+          },
+          "openbookqa": {
+            "acc": 0.26953125,
+            "acc_norm": 0.37109375,
+            "objective": 1.5361488800102652,
+            "objective_choice_cross_entropy": 1.9870196608834358,
+            "raw_choice_cross_entropy": 5.811456630942855,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1835365373907531
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 12,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "ef6188aad34e2b2045d516c388efd5b64eb59d915b30f60d1ca8cbba6abe3bf9",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1584701713787768,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6782337298345104,
+          1.6387066129230432
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.703125,
+            "objective": 0.6782337298345104,
+            "objective_choice_cross_entropy": 0.8593330735714325,
+            "raw_choice_cross_entropy": 1.4599043631610704,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13493569862374385
+          },
+          "openbookqa": {
+            "acc": 0.21484375,
+            "acc_norm": 0.3671875,
+            "objective": 1.6387066129230432,
+            "objective_choice_cross_entropy": 2.1022665345138214,
+            "raw_choice_cross_entropy": 6.1529309882677286,
+            "samples": 256,
+            "teacher_candidate_kl": 0.24802684815070916
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 13,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "56424669ee970c6f3b217878e1dc13027670ebfa6c2e40b4d9b1a81955f49140",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.1240158007270553,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.6649096658181899,
+          1.5831219356359207
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7421875,
+            "acc_norm": 0.74609375,
+            "objective": 0.6649096658181899,
+            "objective_choice_cross_entropy": 0.8445019887095705,
+            "raw_choice_cross_entropy": 1.4235698444898692,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12613269714404812
+          },
+          "openbookqa": {
+            "acc": 0.26171875,
+            "acc_norm": 0.375,
+            "objective": 1.5831219356359207,
+            "objective_choice_cross_entropy": 2.0515410832549064,
+            "raw_choice_cross_entropy": 5.9636803736029185,
+            "samples": 256,
+            "teacher_candidate_kl": 0.177864492778964
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 14,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "036ad886e13941bad0919def59f7fa1219441e0863c7f2a1ee72c5c51cf20bff",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0001433711900207,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5745933840810414,
+          1.4256933582990001
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7734375,
+            "acc_norm": 0.78515625,
+            "objective": 0.5745933840810414,
+            "objective_choice_cross_entropy": 0.7232003472394102,
+            "raw_choice_cross_entropy": 1.1407860177200564,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1287724946059351
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.4140625,
+            "objective": 1.4256933582990001,
+            "objective_choice_cross_entropy": 1.8553094441251698,
+            "raw_choice_cross_entropy": 5.367088803112093,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13684510082049073
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 15,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "43d880fc7b59f674726bf6c11941bff530b5e1d48c533e7f923e43b557dfd293",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.986798960094565,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5723766288875541,
+          1.4012212913015758
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.7890625,
+            "acc_norm": 0.8125,
+            "objective": 0.5723766288875541,
+            "objective_choice_cross_entropy": 0.7283965233888343,
+            "raw_choice_cross_entropy": 1.0530691812575248,
+            "samples": 256,
+            "teacher_candidate_kl": 0.10431694538371394
+          },
+          "openbookqa": {
+            "acc": 0.29296875,
+            "acc_norm": 0.41796875,
+            "objective": 1.4012212913015758,
+            "objective_choice_cross_entropy": 1.8238031113992192,
+            "raw_choice_cross_entropy": 5.370694364103455,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1334758310086453
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 233,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "d45aec2a1391922566bd796a34da853f2b877459bbe18b4d30f587f23b71ebce",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9761505159609369,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5562480579667516,
+          1.3960529739551224
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.8046875,
+            "acc_norm": 0.8125,
+            "objective": 0.5562480579667516,
+            "objective_choice_cross_entropy": 0.7044116398884553,
+            "raw_choice_cross_entropy": 1.0591685630304082,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1117573122016404
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.40234375,
+            "objective": 1.3960529739551224,
+            "objective_choice_cross_entropy": 1.8117551336847837,
+            "raw_choice_cross_entropy": 5.38167107230435,
+            "samples": 256,
+            "teacher_candidate_kl": 0.14894649476613905
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 225,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "3824cdee08218061e9460fb971162984dd19fd3d32ac19b2fac0bb149eb5955d",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9908066008310509,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5792670543296865,
+          1.4023461473324152
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.80078125,
+            "acc_norm": 0.8046875,
+            "objective": 0.5792670543296865,
+            "objective_choice_cross_entropy": 0.7318076334496095,
+            "raw_choice_cross_entropy": 1.1618721936475171,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1216453169699174
+          },
+          "openbookqa": {
+            "acc": 0.2890625,
+            "acc_norm": 0.421875,
+            "objective": 1.4023461473324152,
+            "objective_choice_cross_entropy": 1.8263812393604595,
+            "raw_choice_cross_entropy": 5.33785696789066,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13024087124828265
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 125,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "323c289c571d383c53c82f4af9820ef0752464b46ceeb2843c277da868e91d57",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9841886262150363,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5710938227289039,
+          1.397283429701169
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.78125,
+            "acc_norm": 0.78125,
+            "objective": 0.5710938227289039,
+            "objective_choice_cross_entropy": 0.7197250797750856,
+            "raw_choice_cross_entropy": 1.0853026482072419,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12520005159035863
+          },
+          "openbookqa": {
+            "acc": 0.30078125,
+            "acc_norm": 0.4140625,
+            "objective": 1.397283429701169,
+            "objective_choice_cross_entropy": 1.8161950180338857,
+            "raw_choice_cross_entropy": 5.250475527165891,
+            "samples": 256,
+            "teacher_candidate_kl": 0.14054866470301847
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 115,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "734d832a669bb3b03b1fa358708f21ae0a01e59ad72e7d03d2db164f073b9b22",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9872828276177432,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5639718912785135,
+          1.4105937639569728
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.8125,
+            "acc_norm": 0.8125,
+            "objective": 0.5639718912785135,
+            "objective_choice_cross_entropy": 0.7135642008998128,
+            "raw_choice_cross_entropy": 1.0889922390869167,
+            "samples": 256,
+            "teacher_candidate_kl": 0.11519496241461588
+          },
+          "openbookqa": {
+            "acc": 0.29296875,
+            "acc_norm": 0.4140625,
+            "objective": 1.4105937639569728,
+            "objective_choice_cross_entropy": 1.8395073517762466,
+            "raw_choice_cross_entropy": 5.3454279668712665,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12385300049915138
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 212,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "cd6e143f68785442c47d4c325b2e7e8182c21cf95448ad69788317ac09e374ba",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 1.0015009069516565,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5754477793402706,
+          1.4275540345630424
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.8046875,
+            "acc_norm": 0.78515625,
+            "objective": 0.5754477793402706,
+            "objective_choice_cross_entropy": 0.7294092985089385,
+            "raw_choice_cross_entropy": 1.1223183515265405,
+            "samples": 256,
+            "teacher_candidate_kl": 0.11356322183426679
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.421875,
+            "objective": 1.4275540345630424,
+            "objective_choice_cross_entropy": 1.8525194715800537,
+            "raw_choice_cross_entropy": 5.348903150399518,
+            "samples": 256,
+            "teacher_candidate_kl": 0.1526577235120094
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 180,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "9bd1741e41d6e9f4330298d63a0479f1512ff2c521a9918dd922d6552cd7d1a2",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9911644679289755,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5692691940934773,
+          1.4130597417644737
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.80859375,
+            "acc_norm": 0.78515625,
+            "objective": 0.5692691940934773,
+            "objective_choice_cross_entropy": 0.7195341802493632,
+            "raw_choice_cross_entropy": 1.1180791931765357,
+            "samples": 256,
+            "teacher_candidate_kl": 0.11847423562581981
+          },
+          "openbookqa": {
+            "acc": 0.28515625,
+            "acc_norm": 0.41796875,
+            "objective": 1.4130597417644737,
+            "objective_choice_cross_entropy": 1.8411049784107774,
+            "raw_choice_cross_entropy": 5.351191090604702,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12892403182556278
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 193,
+          "variant": "uniform_norm"
+        }
+      ]
+    },
+    {
+      "mask_sha256": "b8e26e0dc7dd7950763e60f41af057f1e061871958e46bc668f2f0e2f6c6afba",
+      "metrics": {
+        "choice_score_normalization": "characters",
+        "fitness": 0.9910484445643541,
+        "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+        "lower_is_better": true,
+        "num_choice_requests": 2048,
+        "num_questions": 512,
+        "num_tasks": 2,
+        "schema_version": "task-choice-proxy-distillation-v1",
+        "task_objectives": [
+          0.5645153649142166,
+          1.4175815242144918
+        ],
+        "task_order": [
+          "arc_easy",
+          "openbookqa"
+        ],
+        "tasks": {
+          "arc_easy": {
+            "acc": 0.78515625,
+            "acc_norm": 0.79296875,
+            "objective": 0.5645153649142166,
+            "objective_choice_cross_entropy": 0.7097582009631573,
+            "raw_choice_cross_entropy": 1.1286439353716176,
+            "samples": 256,
+            "teacher_candidate_kl": 0.12878685676739426
+          },
+          "openbookqa": {
+            "acc": 0.296875,
+            "acc_norm": 0.41796875,
+            "objective": 1.4175815242144918,
+            "objective_choice_cross_entropy": 1.8437559337267961,
+            "raw_choice_cross_entropy": 5.384122253500878,
+            "samples": 256,
+            "teacher_candidate_kl": 0.13905829567757866
+          }
+        },
+        "temperature": 0.25,
+        "weights": {
+          "cross_entropy": 0.75,
+          "teacher_candidate_kl": 0.25
+        }
+      },
+      "sources": [
+        {
+          "candidate_id": 142,
+          "variant": "uniform_norm"
+        }
+      ]
+    }
+  ],
+  "posthoc_exploratory": true,
+  "primary_metric": "acc_norm",
+  "protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14",
+  "schema_version": "tape-multistart-winner-v1",
+  "selection_split": "train-holdout",
+  "selection_uses_test": false,
+  "winner": {
+    "mask_sha256": "43d880fc7b59f674726bf6c11941bff530b5e1d48c533e7f923e43b557dfd293",
+    "metrics": {
+      "choice_score_normalization": "characters",
+      "fitness": 0.986798960094565,
+      "fitness_name": "task_balanced_weighted_choice_ce_teacher_kl",
+      "lower_is_better": true,
+      "num_choice_requests": 2048,
+      "num_questions": 512,
+      "num_tasks": 2,
+      "schema_version": "task-choice-proxy-distillation-v1",
+      "task_objectives": [
+        0.5723766288875541,
+        1.4012212913015758
+      ],
+      "task_order": [
+        "arc_easy",
+        "openbookqa"
+      ],
+      "tasks": {
+        "arc_easy": {
+          "acc": 0.7890625,
+          "acc_norm": 0.8125,
+          "objective": 0.5723766288875541,
+          "objective_choice_cross_entropy": 0.7283965233888343,
+          "raw_choice_cross_entropy": 1.0530691812575248,
+          "samples": 256,
+          "teacher_candidate_kl": 0.10431694538371394
+        },
+        "openbookqa": {
+          "acc": 0.29296875,
+          "acc_norm": 0.41796875,
+          "objective": 1.4012212913015758,
+          "objective_choice_cross_entropy": 1.8238031113992192,
+          "raw_choice_cross_entropy": 5.370694364103455,
+          "samples": 256,
+          "teacher_candidate_kl": 0.1334758310086453
+        }
+      },
+      "temperature": 0.25,
+      "weights": {
+        "cross_entropy": 0.75,
+        "teacher_candidate_kl": 0.25
+      }
+    },
+    "sources": [
+      {
+        "candidate_id": 233,
+        "variant": "uniform_norm"
+      }
+    ]
+  },
+  "winner_equals_baselines": []
+}

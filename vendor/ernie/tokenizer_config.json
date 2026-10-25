@@ -1,0 +1,22 @@
+{
+    "bos_token": "<s>",
+    "eos_token": "</s>",
+    "pad_token": "<unk>",
+    "unk_token": "<unk>",
+    "cls_token": "<|begin_of_sentence|>",
+    "sep_token": "<|end_of_sentence|>",
+    "mask_token": "<mask:1>",
+    "sys_start_token": "<mask:4>",
+    "sys_end_token": "<mask:5>",
+    "header_start_token": "<mask:6>",
+    "header_end_token": "<mask:7>",
+    "additional_special_tokens": null,
+    "tokenizer_class": "Ernie4_5_Tokenizer",
+    "auto_map": {
+        "AutoTokenizer": [
+            "tokenization_ernie4_5.Ernie4_5_Tokenizer",
+            null
+        ]
+    },
+    "chat_template": "{%- if not add_generation_prompt is defined -%}\n    {%- set add_generation_prompt = true -%}\n{%- endif -%}\n{%- if not cls_token is defined -%}\n    {%- set cls_token = \"<|begin_of_sentence|>\" -%}\n{%- endif -%}\n{%- if not sep_token is defined -%}\n    {%- set sep_token = \"<|end_of_sentence|>\" -%}\n{%- endif -%}\n{{- cls_token -}}\n{%- for message in messages -%}\n    {%- if message[\"role\"] == \"user\" -%}\n        {{- \"User: \" + message[\"content\"] + \"\n\" -}}\n    {%- elif message[\"role\"] == \"assistant\" -%}\n        {{- \"Assistant: \" + message[\"content\"] + sep_token -}}\n    {%- elif message[\"role\"] == \"system\" -%}\n        {{- message[\"content\"] + \"\n\" -}}\n    {%- endif -%}\n{%- endfor -%}\n{%- if add_generation_prompt -%}\n    {{- \"Assistant: \" -}}\n{%- endif -%}"
+}

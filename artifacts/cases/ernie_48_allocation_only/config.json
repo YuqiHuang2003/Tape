@@ -1,0 +1,98 @@
+{
+  "anchor_names": [
+    "reap",
+    "historical_projection",
+    "front_allocation",
+    "back_allocation"
+  ],
+  "data": {
+    "holdout_samples_per_task": 256,
+    "search_samples_per_task": 64,
+    "task_revisions": {
+      "arc_easy": "210d026faf9955653af8916fad021475a3f00453",
+      "openbookqa": "388097ea7776314e93a529163e0fea805b8a6454"
+    }
+  },
+  "family": "ernie",
+  "mode": "allocation_only",
+  "model": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "id": "baidu/ERNIE-4.5-21B-A3B-PT",
+    "revision": "23c6cb79af127ec966c9c03506dc80a3ff9fa953",
+    "transformers_version": "4.53.3"
+  },
+  "retained_per_layer_reference": 48,
+  "search": {
+    "crossover_probability": 0.5,
+    "generations": 15,
+    "identity_swap_counts": [
+      1,
+      2,
+      3
+    ],
+    "identity_swap_probabilities": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "joint_mutation_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "joint_mutation_probabilities": [
+      0.3,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.1
+    ],
+    "max_duplicate_attempts": 1024,
+    "max_retained_per_layer": 52,
+    "min_retained_per_layer": 44,
+    "offspring_size": 16,
+    "population_size": 16,
+    "seed": 6707,
+    "total_retained": 1296,
+    "tournament_size": 2,
+    "transfer_counts": [
+      1,
+      2,
+      4
+    ],
+    "transfer_probabilities": [
+      0.5454545454545454,
+      0.2727272727272727,
+      0.18181818181818182
+    ]
+  },
+  "shape": [
+    27,
+    64
+  ],
+  "source_protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14",
+  "source_run": "results/runs/uniform_tape_20261023"
+}

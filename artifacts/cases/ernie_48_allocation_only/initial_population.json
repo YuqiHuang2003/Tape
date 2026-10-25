@@ -1,0 +1,81 @@
+{
+  "contexts": [
+    {
+      "exact_baseline": true,
+      "initial_source": "reap"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "historical_projection"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "front_allocation"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "back_allocation"
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_projection",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "front_allocation",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "back_allocation",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_projection",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "front_allocation",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "back_allocation",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_projection",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "front_allocation",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "back_allocation",
+      "steps": 4
+    }
+  ],
+  "population_sha256": "814149451c59cb79457bf077f3a93570dae72a85d1c485a36c6c16ed9e6dba36"
+}
