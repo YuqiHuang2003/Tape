@@ -8,6 +8,7 @@ import json
 import sys
 from dataclasses import asdict, replace
 from pathlib import Path
+from statistics import mean, stdev
 from time import perf_counter
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,6 +53,80 @@ def initial_population(folder: Path) -> GlobalBudgetInitialPopulation:
     )
 
 
+def aggregate_scores(scores: list[dict], original_mean: float) -> dict:
+    """Compute sample variability across searches, not across test questions."""
+    if len(scores) < 2 or not 0 < original_mean <= 1:
+        raise ValueError("at least two runs and a positive original accuracy are required")
+    values = {task: [] for task in TASKS}
+    values.update(avg=[], performance_retained=[])
+    for score in scores:
+        tasks = [float(score["tasks"][task]) for task in TASKS]
+        if not all(np.isfinite(value) and 0 <= value <= 1 for value in tasks):
+            raise ValueError("accuracy must be a finite fraction between zero and one")
+        average = mean(tasks)
+        if not np.isclose(average, score["mean"], rtol=0, atol=1e-12):
+            raise ValueError("saved average differs from the task scores")
+        for task, value in zip(TASKS, tasks, strict=True):
+            values[task].append(100 * value)
+        values["avg"].append(100 * average)
+        values["performance_retained"].append(100 * average / original_mean)
+    return {
+        metric: {"mean_percent": mean(rows), "sample_std_percentage_points": stdev(rows)}
+        for metric, rows in values.items()
+    }
+
+
+def statistics_summary() -> dict:
+    """Recompute each reported cohort from its individual released evaluations."""
+    summary = read_json(ARTIFACTS / "multiseed_summary.json")
+    originals = read_json(ARTIFACTS / "originals.json")
+    groups = {}
+    for name, group in summary["cases"].items():
+        _, spec = case_spec(name)
+        runs = {}
+        for row in group["runs"]:
+            folder, run_spec = case_spec(row["case_id"])
+            if row["seed"] != run_spec["search"]["seed"] or row["seed"] in runs:
+                raise RuntimeError(f"invalid or duplicate seed record in {name}")
+            evaluation = read_json(folder / "evaluations.json")["tape_multistart"]
+            scores = evaluation["scores"]
+            if canonical_sha256(scores) != canonical_sha256(row["scores"]):
+                raise RuntimeError(f"summary differs from evaluation for {row['case_id']}")
+            if evaluation["source_sha256"] != row["source_evaluation_sha256"]:
+                raise RuntimeError(f"summary source hash differs for {row['case_id']}")
+            runs[row["seed"]] = scores
+        original_mean = originals[spec["family"]]["scores"]["mean"]
+
+        groups[name] = verified_cohort(
+            group["reported_seeds"], group["metrics"], runs, original_mean, name
+        )
+        if group["n"] != groups[name]["n"]:
+            raise RuntimeError(f"incorrect reported sample count in {name}")
+        for cohort in ("original_cohort", "all_recorded"):
+            declared = group[cohort]
+            groups[name][cohort] = verified_cohort(
+                declared["seeds"], declared["metrics"], runs, original_mean, name
+            )
+            if declared["n"] != groups[name][cohort]["n"]:
+                raise RuntimeError(f"incorrect {cohort} sample count in {name}")
+    return {
+        "std_definition": "sample standard deviation across search seeds (ddof=1)",
+        "late_seed_note": summary["late_seed_note"],
+        "cases": groups,
+    }
+
+
+def verified_cohort(
+    seeds: list[int], declared: dict, runs: dict, original_mean: float, group_name: str
+) -> dict:
+    metrics = aggregate_scores([runs[seed] for seed in seeds], original_mean)
+    for metric, values in metrics.items():
+        for key, value in values.items():
+            if not np.isclose(value, declared[metric][key], rtol=0, atol=1e-9):
+                raise RuntimeError(f"incorrect {metric}/{key} statistic in {group_name}")
+    return {"seeds": seeds, "n": len(seeds), "metrics": metrics}
+
+
 def verify_release() -> int:
     manifest = read_json(ROOT / "RELEASE_MANIFEST.json")
     for name, entry in manifest["files"].items():
@@ -81,6 +156,8 @@ def verify_release() -> int:
         final = np.load(folder / "winner_mask.npy", allow_pickle=False)
         if mask_digest(final) != frozen["winner"]["mask_sha256"]:
             raise RuntimeError("frozen selection does not match its mask")
+    if (ARTIFACTS / "multiseed_summary.json").exists():
+        statistics_summary()
     return len(manifest["files"])
 
 
@@ -354,7 +431,9 @@ def run(name: str, model_path: Path | None, output: Path, *, test: bool) -> dict
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", choices=("check", "tables", "replay", "run", "evaluate"))
+    parser.add_argument(
+        "action", choices=("check", "tables", "statistics", "replay", "run", "evaluate")
+    )
     parser.add_argument("--case", default="all")
     parser.add_argument("--model-path", type=Path)
     parser.add_argument("--output", type=Path)
@@ -367,6 +446,8 @@ def main() -> None:
         print(json.dumps({"verified_files": verify_release()}))
     elif args.action == "tables":
         print((ROOT / "docs/RESULTS.md").read_text())
+    elif args.action == "statistics":
+        print(json.dumps(statistics_summary(), indent=2))
     elif args.action == "replay":
         names = (
             list(read_json(ARTIFACTS / "cases.json")["cases"])

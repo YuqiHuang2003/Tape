@@ -1,0 +1,3 @@
+# Preserve generated figure bytes and the source table's original CSV line endings.
+docs/figures/*.svg -whitespace
+artifacts/expert_analysis/*.csv whitespace=cr-at-eol

@@ -37,6 +37,34 @@ def test_released_methods_select_their_own_masks(tmp_path):
         subject.evaluation_mask(tmp_path, spec, "unknown")
 
 
+def test_statistics_uses_paired_task_averages_and_sample_standard_deviation():
+    scores = [
+        {"tasks": {"arc_easy": 0.4, "openbookqa": 0.6}, "mean": 0.5},
+        {"tasks": {"arc_easy": 0.5, "openbookqa": 0.5}, "mean": 0.5},
+        {"tasks": {"arc_easy": 0.6, "openbookqa": 0.4}, "mean": 0.5},
+    ]
+    result = subject.aggregate_scores(scores, 0.625)
+    assert result["arc_easy"]["sample_std_percentage_points"] == pytest.approx(10)
+    assert result["avg"]["mean_percent"] == 50
+    assert result["avg"]["sample_std_percentage_points"] == 0
+    assert result["performance_retained"]["mean_percent"] == 80
+
+
+def test_statistics_rejects_inconsistent_average():
+    invalid = {"tasks": {"arc_easy": 0.4, "openbookqa": 0.6}, "mean": 0.6}
+    with pytest.raises(ValueError, match="saved average"):
+        subject.aggregate_scores([invalid, invalid], 0.625)
+
+
+def test_released_statistics_match_individual_evaluations():
+    if not (subject.ARTIFACTS / "multiseed_summary.json").exists():
+        pytest.skip("multiseed statistics are checked inside the generated repository")
+    result = subject.statistics_summary()
+    assert len(result["cases"]) == 4
+    assert result["cases"]["granite_16"]["seeds"] == [6708, 6709, 6710]
+    assert result["cases"]["granite_16"]["all_recorded"]["n"] == 4
+
+
 def test_cpu_verification_rejects_modified_members(tmp_path, monkeypatch):
     monkeypatch.setattr(subject, "ROOT", tmp_path)
     monkeypatch.setattr(subject, "ARTIFACTS", tmp_path / "artifacts")
@@ -74,6 +102,15 @@ def test_published_text_is_english():
         "ernie_32",
         "ernie_48_identity_only",
         "ernie_48_allocation_only",
+        "ernie_48_seed_6708",
+        "ernie_48_seed_6709",
+        "ernie_32_seed_6708",
+        "ernie_32_seed_6709",
+        "granite_24_seed_6708",
+        "granite_24_seed_6709",
+        "granite_16_seed_6707",
+        "granite_16_seed_6709",
+        "granite_16_seed_6710",
     ],
 )
 def test_packaged_cpu_replay_matches_all_recorded_candidates(case):

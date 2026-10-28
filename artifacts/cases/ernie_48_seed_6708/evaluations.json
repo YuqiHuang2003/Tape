@@ -1,0 +1,632 @@
+{
+  "ean_mean": {
+    "cost": {
+      "gpu_seconds": 287.9086875,
+      "peak_device_memory_bytes": 46053079040,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 287.9123433753848
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "c49a3f8b2583fb69953d50a863414f21a36b9d2dd7910337a3e30ba3d0a55ec8",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.5813703703703703,
+      "tasks": {
+        "arc_easy": 0.7407407407407407,
+        "openbookqa": 0.422
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/report_review_test_20261021/evaluations/ernie/ean_mean_75.json",
+    "source_sha256": "8776b2334cd836d801f0a7c9b7118494a1c83574f01ef185d4a0349fcd29566b"
+  },
+  "frequency": {
+    "cost": {
+      "gpu_seconds": 287.8026875,
+      "peak_device_memory_bytes": 46053079040,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 287.80627446621656
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "45bd6e69936d6ded0e6c56c3d5ae8b591fa21cdaa8fd65db787cdf3916273bcd",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.5429023569023569,
+      "tasks": {
+        "arc_easy": 0.7138047138047138,
+        "openbookqa": 0.372
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/frequency.json",
+    "source_sha256": "fa23747c8775e86ae7317c5a170e356ccdd708b39c27c35bcae23b5730957f69"
+  },
+  "historical_tape": {
+    "cost": {
+      "gpu_seconds": 288.47590625,
+      "peak_device_memory_bytes": 46209306112,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 288.4800012409687
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "c84bb6bcf47536ec07d03f5fd96dbea3e4ca8c1c1dceb468053431ec03686fdc",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.610040404040404,
+      "tasks": {
+        "arc_easy": 0.8080808080808081,
+        "openbookqa": 0.412
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/historical_tape.json",
+    "source_sha256": "2a42de17b94707f6715c6c16e09f876ef86c52e7276203b60e194c5ef2535fb9"
+  },
+  "hybrid": {
+    "cost": {
+      "gpu_seconds": 288.405875,
+      "peak_device_memory_bytes": 46053079040,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 288.4094849489629
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "81681f3cc4db92f5c187fad313b225c05e4e222a9d166a38f2be5ec3d6c44f77",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.5581616161616162,
+      "tasks": {
+        "arc_easy": 0.7323232323232324,
+        "openbookqa": 0.384
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/hybrid.json",
+    "source_sha256": "04a3278a30a1eb1ec32181beebdb47621c287d1eb3a5fa65f4361854e9d5dd3c"
+  },
+  "reap": {
+    "cost": {
+      "gpu_seconds": 331.75625,
+      "peak_device_memory_bytes": 46053079040,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 331.7607580125332
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "59030b85afa02fa46fc5bbb3ccd365ddfc4ca877430679310675f5db24a87b64",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.5849983164983165,
+      "tasks": {
+        "arc_easy": 0.757996632996633,
+        "openbookqa": 0.412
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/reap.json",
+    "source_sha256": "3afc1652d281e381672482785013ac9db67a40477f6b1dd68cf406553126a03c"
+  },
+  "tape_multistart": {
+    "cost": {
+      "gpu_seconds": 288.13640625,
+      "peak_device_memory_bytes": 46189902848,
+      "sample_counts": {
+        "arc_easy": {
+          "effective": 2376,
+          "expected": 2376,
+          "original": 2376
+        },
+        "openbookqa": {
+          "effective": 500,
+          "expected": 500,
+          "original": 500
+        }
+      },
+      "wall_seconds": 288.1402631960809
+    },
+    "dataset_evidence": {
+      "arc_easy": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+        "dataset_name": "ARC-Easy",
+        "dataset_path": "allenai/ai2_arc",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+        "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+        "hub_repository": "allenai/ai2_arc",
+        "huggingface_fingerprint": "b019ca21ba59e1f3",
+        "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+        "lm_eval_task": "arc_easy",
+        "num_rows": 2376,
+        "output_type": "multiple_choice",
+        "revision": "210d026faf9955653af8916fad021475a3f00453"
+      },
+      "openbookqa": {
+        "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+        "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+        "dataset_name": "main",
+        "dataset_path": "openbookqa",
+        "evaluation_split": "test",
+        "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+        "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+        "hub_repository": "allenai/openbookqa",
+        "huggingface_fingerprint": "f412d851e9522d86",
+        "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+        "lm_eval_task": "openbookqa",
+        "num_rows": 500,
+        "output_type": "multiple_choice",
+        "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+      }
+    },
+    "hardware": {
+      "cublas_workspace_config": {
+        "configured_now": false,
+        "cuda_initialized_at_check": true,
+        "valid": true,
+        "value": ":4096:8",
+        "verified_before_cuda_initialization_in_process": false
+      },
+      "cuda_available": true,
+      "cuda_runtime": "12.4",
+      "cudnn": 90100,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": true,
+      "devices": [
+        {
+          "compute_capability": [
+            8,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "total_memory_bytes": 84974239744
+        }
+      ],
+      "driver_version": [
+        "550.144.03"
+      ]
+    },
+    "is_synthetic": false,
+    "mask_sha256": "0e113c3d6ca5d003d0332edc7a611656d82e9fde27c38864067d16e0573010d8",
+    "packages": {
+      "accelerate": "1.7.0",
+      "datasets": "3.6.0",
+      "lm_eval": "0.4.8",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.4.5",
+      "torch": "2.5.1",
+      "transformers": "4.53.3",
+      "yaml": "6.0.2"
+    },
+    "scores": {
+      "mean": 0.620513468013468,
+      "tasks": {
+        "arc_easy": 0.811026936026936,
+        "openbookqa": 0.43
+      }
+    },
+    "selection_uses_test": false,
+    "source": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/tape_multistart.json",
+    "source_sha256": "aadaed5d2d7dd580d0d309aea48efd9869892c768f549dbe79a223959d1fe899"
+  }
+}

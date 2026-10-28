@@ -1,0 +1,101 @@
+{
+  "anchor_names": [
+    "reap",
+    "frequency",
+    "hybrid",
+    "historical_tape"
+  ],
+  "base_case": "ernie_32",
+  "data": {
+    "holdout_samples_per_task": 256,
+    "search_samples_per_task": 64,
+    "task_revisions": {
+      "arc_easy": "210d026faf9955653af8916fad021475a3f00453",
+      "openbookqa": "388097ea7776314e93a529163e0fea805b8a6454"
+    }
+  },
+  "data_sampling_seed": 6707,
+  "family": "ernie",
+  "mode": "joint",
+  "model": {
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "id": "baidu/ERNIE-4.5-21B-A3B-PT",
+    "revision": "23c6cb79af127ec966c9c03506dc80a3ff9fa953",
+    "transformers_version": "4.53.3"
+  },
+  "retained_per_layer_reference": 32,
+  "search": {
+    "crossover_probability": 0.5,
+    "generations": 15,
+    "identity_swap_counts": [
+      1,
+      2,
+      3
+    ],
+    "identity_swap_probabilities": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "joint_mutation_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "joint_mutation_probabilities": [
+      0.3,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.1
+    ],
+    "max_duplicate_attempts": 1024,
+    "max_retained_per_layer": 36,
+    "min_retained_per_layer": 28,
+    "offspring_size": 16,
+    "population_size": 16,
+    "seed": 6708,
+    "total_retained": 864,
+    "tournament_size": 2,
+    "transfer_counts": [
+      1,
+      2,
+      3
+    ],
+    "transfer_probabilities": [
+      0.5,
+      0.3,
+      0.2
+    ]
+  },
+  "seed": 6708,
+  "shape": [
+    27,
+    64
+  ],
+  "source_protocol_sha256": "90f547a388a46e5d042f6e1cdf3de8737a980fb5c81299adc4c43b35e26fa45f",
+  "source_run": "results/runs/tape_multiseed_20261025/seed_6708"
+}

@@ -1,0 +1,4 @@
+# CPU-only dependencies for scripts/generate_paper_figures.py.
+matplotlib==3.9.4
+numpy==1.26.4
+pillow==11.3.0

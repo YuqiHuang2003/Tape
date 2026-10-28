@@ -5,6 +5,7 @@
     "hybrid",
     "historical_identity"
   ],
+  "base_case": "ernie_48_identity_only",
   "data": {
     "holdout_samples_per_task": 256,
     "search_samples_per_task": 64,
@@ -13,6 +14,7 @@
       "openbookqa": "388097ea7776314e93a529163e0fea805b8a6454"
     }
   },
+  "data_sampling_seed": 6707,
   "family": "ernie",
   "mode": "identity_only",
   "model": {
@@ -74,6 +76,7 @@
       0.2
     ]
   },
+  "seed": 6707,
   "shape": [
     27,
     64

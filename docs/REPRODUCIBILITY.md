@@ -60,7 +60,20 @@ Dataset revisions:
 
 Each search has a population of 16 and generates 16 offspring per generation for 15 generations: 256 distinct candidates in total. Final selection considers all 16 initial candidates and eight generated candidates. CE/KL weights are 0.75/0.25, the temperature is 0.25, and choice scores are normalized by character length.
 
+The four main settings start from REAP, Frequency, REAP+Frequency, and a historical feasible TAPE mask, followed by 12 local perturbations. Training samples and anchor masks are fixed across seeds; only the evolutionary-search randomness changes.
+
 Each case records its settings, sampled row indices, source-data hashes, and tokenization hashes in `config.json` and `proxy_data.json`. Fixed initial populations, expert rankings, and final masks are included. Reproduction starts from these inputs and does not require historical run directories.
+
+The release contains 15 independently replayable cases: 13 main-search runs and two single-run search ablations. The original case names remain available as reference runs; additional runs identify their search seed in the case name.
+
+| Setting | Reference case and seed | Additional case names |
+|---|---|---|
+| ERNIE 75% | `ernie_48`, seed 6707 | `ernie_48_seed_6708`, `ernie_48_seed_6709` |
+| ERNIE 50% | `ernie_32`, seed 6707 | `ernie_32_seed_6708`, `ernie_32_seed_6709` |
+| Granite 75% | `granite_24`, seed 6707 | `granite_24_seed_6708`, `granite_24_seed_6709` |
+| Granite 50% | `granite_16`, seed 6708 | `granite_16_seed_6707`, `granite_16_seed_6709`, `granite_16_seed_6710` |
+
+The ablation cases are `ernie_48_identity_only` and `ernie_48_allocation_only`, each with seed 6707. They are not three-seed averages. Select a run by its case name rather than changing the seed of an existing case: each case binds its configuration to the corresponding initial population, recorded search, and final mask.
 
 ## 4. Full search and final test
 
@@ -69,12 +82,14 @@ Granite:
 ```bash
 python scripts/reproduce_tape.py run --case granite_24 --output runs/granite75 --test
 python scripts/reproduce_tape.py run --case granite_16 --output runs/granite50 --test
+python scripts/reproduce_tape.py run --case granite_16_seed_6710 --output runs/granite50_seed6710 --test
 ```
 
 ERNIE:
 
 ```bash
 python scripts/reproduce_tape.py run --case ernie_48 --model-path models/ernie --output runs/ernie75 --test
+python scripts/reproduce_tape.py run --case ernie_48_seed_6708 --model-path models/ernie --output runs/ernie75_seed6708 --test
 python scripts/reproduce_tape.py run --case ernie_32 --model-path models/ernie --output runs/ernie50 --test
 python scripts/reproduce_tape.py run --case ernie_48_identity_only --model-path models/ernie --output runs/identity --test
 python scripts/reproduce_tape.py run --case ernie_48_allocation_only --model-path models/ernie --output runs/allocation --test
@@ -92,14 +107,39 @@ python scripts/reproduce_tape.py evaluate --case ernie_48 --model-path models/er
 python scripts/reproduce_tape.py evaluate --case ernie_48 --model-path models/ernie --method initial_best --output runs/ernie75_initial.json
 ```
 
-All main cases support `original`, `reap`, `frequency`, `hybrid`, and `tape`. The ERNIE main cases additionally support `ean_mean`. `same_capacity_reap` and `initial_best` are available only for ERNIE 75%. Full-test evaluation does not use a sample limit. Read `tasks.*.acc_norm`, not the legacy `mean_primary_acc` field.
+The four reference main cases support `original`, `reap`, `frequency`, `hybrid`, and `tape`. The ERNIE reference main cases additionally support `ean_mean`. The paired diagnostics `same_capacity_reap` and `initial_best` belong to `ernie_48` (seed 6707), not to the three-seed mean. Additional seed cases provide the corresponding searched TAPE expert sets. Full-test evaluation does not use a sample limit. Read `tasks.*.acc_norm`, not the legacy `mean_primary_acc` field.
 
 ## 6. Verification and reproduction scope
 
-CPU replay checks every candidate, the expert budgets, and the training-based selection. GPU commands recompute model scores. The released experiments are individual runs, not multi-run averages. BF16 outputs can vary across hardware and numerical implementations; the release therefore records the software environment, masks, data hashes, and source code.
+Run the following without loading a model or using a GPU:
+
+```bash
+python scripts/reproduce_tape.py check
+python -m pytest
+python scripts/reproduce_tape.py replay --case all
+python scripts/reproduce_tape.py statistics
+```
+
+`check` verifies released inputs and expert budgets. CPU replay regenerates every recorded candidate and verifies training-based selection for all 15 cases. It uses recorded training objectives and does not remeasure inference accuracy. `statistics` aggregates the released full-test scores; it does not rerun search or inference.
+
+The original main-result cohort uses seeds 6707, 6708, and 6709. Means and sample standard deviations (`ddof=1`) describe independent search runs, not repeated inference of a fixed mask. Granite 50% also includes seed 6710, added after the original results were inspected. The original three seeds and the additional run are all retained; the requested 6708–6710 subset and the all-four summary are distinguished from the original cohort. The two search ablations, matched-capacity comparison, and evolution/expert-selection analyses are single-run results. See [results](RESULTS.md) and [report provenance](REPORT_PROVENANCE.md) for the reporting groups.
+
+GPU commands recompute model scores. BF16 outputs can vary across hardware and numerical implementations; the release therefore records the software environment, masks, data hashes, and source code. This repository update packages completed experiments; it does not add new GPU experiments.
 
 Full inference reproduction uses the frozen starting points supplied here. From-scratch calibration of REAP/Frequency/EAN rankings is upstream of these inputs. The release provides the resulting rankings and expert sets rather than requiring all earlier calibration and historical searches. Model and dataset revisions and third-party terms are listed in `THIRD_PARTY_NOTICES.md`.
 
-## 7. Report
+## 7. Figures
 
-`report/main.tex` is the English report manuscript. Compile it with pdfLaTeX and the official NeurIPS 2026 `neurips_2026.sty`; the template download location is recorded in the source header. The repository is [YuqiHuang2003/Tape](https://github.com/YuqiHuang2003/Tape). The local Chinese working draft and its editorial annotations are not distributed.
+The two active paper figures can be generated without model weights or a GPU:
+
+```bash
+python3.10 -m venv .venv-figures
+.venv-figures/bin/python -m pip install -r requirements-figures.txt
+.venv-figures/bin/python scripts/generate_paper_figures.py --package
+```
+
+The pruning diagram is illustrative. The expert-selection comparison reads the portable source table `artifacts/expert_analysis/expert_status.csv`; it uses the single ERNIE 75% reference run and matched layer capacities. Generated PDF, SVG, and PNG files are written to `docs/figures/`. Historical figure revisions are not required.
+
+## 8. Report
+
+[`report/report.pdf`](../report/report.pdf) is the latest author-supplied English report, published unchanged. The earlier English source is preserved at `report/legacy/main.tex`; it is not the source of the current PDF. It can be compiled with pdfLaTeX and the official NeurIPS 2026 `neurips_2026.sty`, whose download location is recorded in its header. [Report provenance](REPORT_PROVENANCE.md) identifies the versions and the differences between the PDF and recorded experiments. The repository is [YuqiHuang2003/Tape](https://github.com/YuqiHuang2003/Tape). The local Chinese working draft and its editorial annotations are not distributed.

@@ -1,0 +1,81 @@
+{
+  "contexts": [
+    {
+      "exact_baseline": true,
+      "initial_source": "reap"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "frequency"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "hybrid"
+    },
+    {
+      "exact_baseline": true,
+      "initial_source": "historical_tape"
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "frequency",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "hybrid",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_tape",
+      "steps": 1
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "frequency",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "hybrid",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_tape",
+      "steps": 2
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "reap",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "frequency",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "hybrid",
+      "steps": 4
+    },
+    {
+      "exact_baseline": false,
+      "initial_source": "historical_tape",
+      "steps": 4
+    }
+  ],
+  "population_sha256": "6236faf009092940766d7494c2200d964878e5304e584d6c7b51b1f7c33272de"
+}

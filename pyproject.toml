@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tape-moe-pruning"
-version = "0.1.0"
+version = "0.2.0"
 description = "Task-aware evolutionary expert pruning under a fixed global budget"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"

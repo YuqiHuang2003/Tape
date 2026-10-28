@@ -1,0 +1,83 @@
+{
+  "revision": 6,
+  "generated_without_model_execution": true,
+  "figure_count": 2,
+  "retained_figure_ids": [
+    1,
+    4
+  ],
+  "figure_1": {
+    "style": "circular expert nodes and shared-representation connections",
+    "illustrative_layer_counts": {
+      "original": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "uniform": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "tape": [
+        7,
+        5,
+        6,
+        6
+      ]
+    },
+    "experimental_model_dimensions": false,
+    "tape_subtitle": "75%"
+  },
+  "palette_source": {
+    "figure_1": {
+      "name": "Paul Tol high-contrast; blue/gold outlines",
+      "url": "https://sronpersonalpages.nl/~pault/"
+    },
+    "figure_4": {
+      "name": "ColorBrewer Pastel1; light green/light orange fills",
+      "url": "https://colorbrewer2.org/export/colorbrewer.json"
+    }
+  },
+  "figure_4_palette": {
+    "kept_by_both": "#F2F2F2",
+    "pruned_by_both": "#FFFFFF",
+    "tape_only": "#CCEBC5",
+    "matched_capacity_reap_only": "#FED9A6"
+  },
+  "figure_4_below_legend_annotations": false,
+  "figure_4_numeric_annotations": false,
+  "source_expert_csv_sha256": "f548a4a5ec0a000176cb870ce2eb6bdb2ac86200b48d4192775c49fb21d33932",
+  "files": [
+    {
+      "path": "fig01_tape_framework.pdf",
+      "sha256": "5972dbc8a852ae2ad062f172fc1030f870d41e5f00acf2fd39aa5d3383d2bbf9"
+    },
+    {
+      "path": "fig01_tape_framework.svg",
+      "sha256": "f8bcb30ad3fcd63fef334bcecedc3e7103ea2393f8cc1c0193e65ab2d84e77b2"
+    },
+    {
+      "path": "fig01_tape_framework.png",
+      "sha256": "1375fe2063e7c55614dae2c0b4c15f28b193fa90eb662ddfe8e1cd95cf0cd431"
+    },
+    {
+      "path": "fig04_expert_selection.pdf",
+      "sha256": "9e4cf678c681c655955d8c8524e4c82668dea4786cac379f81280ab9a2bfbc73"
+    },
+    {
+      "path": "fig04_expert_selection.svg",
+      "sha256": "38b2366ccf04ded7e789082c258f03f23354b177a8fbbaf562a83e10d5df4b7e"
+    },
+    {
+      "path": "fig04_expert_selection.png",
+      "sha256": "f9239195693f0267b057efc4193dc87b3afceb89fb6ffdc3e191fa5f537ac38d"
+    },
+    {
+      "path": "all_figures_preview.png",
+      "sha256": "bbe2a53b015272f6b465a1dd817fb503ef1f6f89ca86fa02c8d482f84ee91bc4"
+    }
+  ]
+}

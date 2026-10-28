@@ -1,0 +1,594 @@
+{
+  "average_definition": "equal-weight mean of ARC-Easy and OpenBookQA per run",
+  "cases": {
+    "ernie_32": {
+      "all_recorded": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 68.75701459034792,
+            "sample_std_percentage_points": 0.8871723767543378
+          },
+          "avg": {
+            "mean_percent": 51.178507295173965,
+            "sample_std_percentage_points": 0.7720938905853706
+          },
+          "openbookqa": {
+            "mean_percent": 33.6,
+            "sample_std_percentage_points": 0.7211102550927972
+          },
+          "performance_retained": {
+            "mean_percent": 82.25362046309098,
+            "sample_std_percentage_points": 1.2409021129084183
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "expert_retention_percent": 50,
+      "family": "ernie",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 68.75701459034792,
+          "sample_std_percentage_points": 0.8871723767543378
+        },
+        "avg": {
+          "mean_percent": 51.178507295173965,
+          "sample_std_percentage_points": 0.7720938905853706
+        },
+        "openbookqa": {
+          "mean_percent": 33.6,
+          "sample_std_percentage_points": 0.7211102550927972
+        },
+        "performance_retained": {
+          "mean_percent": 82.25362046309098,
+          "sample_std_percentage_points": 1.2409021129084183
+        }
+      },
+      "n": 3,
+      "original_cohort": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 68.75701459034792,
+            "sample_std_percentage_points": 0.8871723767543378
+          },
+          "avg": {
+            "mean_percent": 51.178507295173965,
+            "sample_std_percentage_points": 0.7720938905853706
+          },
+          "openbookqa": {
+            "mean_percent": 33.6,
+            "sample_std_percentage_points": 0.7211102550927972
+          },
+          "performance_retained": {
+            "mean_percent": 82.25362046309098,
+            "sample_std_percentage_points": 1.2409021129084183
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "reported_seeds": [
+        6707,
+        6708,
+        6709
+      ],
+      "runs": [
+        {
+          "case_id": "ernie_32",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "97ed864cec26cc697b6e83d1934d0ff251f39018b11bd7cda10d13609289f199",
+          "released_evaluation": "artifacts/cases/ernie_32/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.5075925925925926,
+            "tasks": {
+              "arc_easy": 0.6851851851851852,
+              "openbookqa": 0.33
+            }
+          },
+          "seed": 6707,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/uniform_tape_20261023/ernie_32/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "803899d0b7f0f2f474f9a1aa660aa980ebb9cc0a4ccb2ab29ac95a6d37e2f60d",
+          "source_protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14"
+        },
+        {
+          "case_id": "ernie_32_seed_6708",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "657e7e7afbe54a03f1a301e5bd720323dcf6a485c9b8122ae0feb53ee44b8693",
+          "released_evaluation": "artifacts/cases/ernie_32_seed_6708/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.5070673400673401,
+            "tasks": {
+              "arc_easy": 0.6801346801346801,
+              "openbookqa": 0.334
+            }
+          },
+          "seed": 6708,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6708/ernie_32/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "7326e343fefeb59a62eb8eaf6fcc61254bb7203a7925bf07a5f1b2432c001d70",
+          "source_protocol_sha256": "90f547a388a46e5d042f6e1cdf3de8737a980fb5c81299adc4c43b35e26fa45f"
+        },
+        {
+          "case_id": "ernie_32_seed_6709",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "ac7dc826678ff4e1599864e61d968b36aaeebdc82b0147d8f6f3d1d4f35791ea",
+          "released_evaluation": "artifacts/cases/ernie_32_seed_6709/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.5206952861952862,
+            "tasks": {
+              "arc_easy": 0.6973905723905723,
+              "openbookqa": 0.344
+            }
+          },
+          "seed": 6709,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6709/ernie_32/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "670e968ad26d8040c0deef16ee8114ac270ce5eb28f3a669dba8864ba78c9371",
+          "source_protocol_sha256": "c3209ced660dd226a3e61268069d609708b56f4019039a58078c7fa389fa803a"
+        }
+      ]
+    },
+    "ernie_48": {
+      "all_recorded": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 80.86419753086419,
+            "sample_std_percentage_points": 0.2802326649191605
+          },
+          "avg": {
+            "mean_percent": 62.26543209876543,
+            "sample_std_percentage_points": 0.3481676175015372
+          },
+          "openbookqa": {
+            "mean_percent": 43.666666666666664,
+            "sample_std_percentage_points": 0.7023769168568484
+          },
+          "performance_retained": {
+            "mean_percent": 100.07242279036082,
+            "sample_std_percentage_points": 0.5595717534772756
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "expert_retention_percent": 75,
+      "family": "ernie",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 80.86419753086419,
+          "sample_std_percentage_points": 0.2802326649191605
+        },
+        "avg": {
+          "mean_percent": 62.26543209876543,
+          "sample_std_percentage_points": 0.3481676175015372
+        },
+        "openbookqa": {
+          "mean_percent": 43.666666666666664,
+          "sample_std_percentage_points": 0.7023769168568484
+        },
+        "performance_retained": {
+          "mean_percent": 100.07242279036082,
+          "sample_std_percentage_points": 0.5595717534772756
+        }
+      },
+      "n": 3,
+      "original_cohort": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 80.86419753086419,
+            "sample_std_percentage_points": 0.2802326649191605
+          },
+          "avg": {
+            "mean_percent": 62.26543209876543,
+            "sample_std_percentage_points": 0.3481676175015372
+          },
+          "openbookqa": {
+            "mean_percent": 43.666666666666664,
+            "sample_std_percentage_points": 0.7023769168568484
+          },
+          "performance_retained": {
+            "mean_percent": 100.07242279036082,
+            "sample_std_percentage_points": 0.5595717534772756
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "reported_seeds": [
+        6707,
+        6708,
+        6709
+      ],
+      "runs": [
+        {
+          "case_id": "ernie_48",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "43d880fc7b59f674726bf6c11941bff530b5e1d48c533e7f923e43b557dfd293",
+          "released_evaluation": "artifacts/cases/ernie_48/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.6266717171717172,
+            "tasks": {
+              "arc_easy": 0.8093434343434344,
+              "openbookqa": 0.444
+            }
+          },
+          "seed": 6707,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/uniform_tape_20261023/ernie_48/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "4c7c549fda6f45895fb96fc2cc5c238a3fdabd57aca5d5c5decf9e1b3e99f865",
+          "source_protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14"
+        },
+        {
+          "case_id": "ernie_48_seed_6708",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "0e113c3d6ca5d003d0332edc7a611656d82e9fde27c38864067d16e0573010d8",
+          "released_evaluation": "artifacts/cases/ernie_48_seed_6708/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.620513468013468,
+            "tasks": {
+              "arc_easy": 0.811026936026936,
+              "openbookqa": 0.43
+            }
+          },
+          "seed": 6708,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "aadaed5d2d7dd580d0d309aea48efd9869892c768f549dbe79a223959d1fe899",
+          "source_protocol_sha256": "90f547a388a46e5d042f6e1cdf3de8737a980fb5c81299adc4c43b35e26fa45f"
+        },
+        {
+          "case_id": "ernie_48_seed_6709",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "6629b08257bfe0de7ade453c76870e9a2069ed9ae4364367d160cf721d5254c0",
+          "released_evaluation": "artifacts/cases/ernie_48_seed_6709/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.6207777777777778,
+            "tasks": {
+              "arc_easy": 0.8055555555555556,
+              "openbookqa": 0.436
+            }
+          },
+          "seed": 6709,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6709/ernie_48/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "c4b548dcb981be9bb4cdb4cd93cddb0b30af66419d5993508a473f0cc17152b0",
+          "source_protocol_sha256": "c3209ced660dd226a3e61268069d609708b56f4019039a58078c7fa389fa803a"
+        }
+      ]
+    },
+    "granite_16": {
+      "all_recorded": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 37.40530303030303,
+            "sample_std_percentage_points": 0.6684503440348697
+          },
+          "avg": {
+            "mean_percent": 32.102651515151514,
+            "sample_std_percentage_points": 0.3743613504579576
+          },
+          "openbookqa": {
+            "mean_percent": 26.8,
+            "sample_std_percentage_points": 0.5416025603090647
+          },
+          "performance_retained": {
+            "mean_percent": 60.804741557986034,
+            "sample_std_percentage_points": 0.7090674473774009
+          }
+        },
+        "n": 4,
+        "seeds": [
+          6707,
+          6708,
+          6709,
+          6710
+        ]
+      },
+      "expert_retention_percent": 50,
+      "family": "granite",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 37.7384960718294,
+          "sample_std_percentage_points": 0.06428978247693251
+        },
+        "avg": {
+          "mean_percent": 32.23591470258137,
+          "sample_std_percentage_points": 0.3219707569504914
+        },
+        "openbookqa": {
+          "mean_percent": 26.733333333333334,
+          "sample_std_percentage_points": 0.6429100507328647
+        },
+        "performance_retained": {
+          "mean_percent": 61.0571516639563,
+          "sample_std_percentage_points": 0.6098358777736425
+        }
+      },
+      "n": 3,
+      "original_cohort": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 37.28956228956229,
+            "sample_std_percentage_points": 0.768025572007346
+          },
+          "avg": {
+            "mean_percent": 32.17811447811448,
+            "sample_std_percentage_points": 0.4195851265240012
+          },
+          "openbookqa": {
+            "mean_percent": 27.066666666666666,
+            "sample_std_percentage_points": 0.1154700538379268
+          },
+          "performance_retained": {
+            "mean_percent": 60.94767386244062,
+            "sample_std_percentage_points": 0.7947245469062095
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "reported_seeds": [
+        6708,
+        6709,
+        6710
+      ],
+      "runs": [
+        {
+          "case_id": "granite_16_seed_6707",
+          "included_in_reported_cohort": false,
+          "mask_sha256": "1df2455e04c5505b700cdbc4651954f18588ea86d683bfab36f5bf733b7af5cd",
+          "released_evaluation": "artifacts/cases/granite_16_seed_6707/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.31702861952861955,
+            "tasks": {
+              "arc_easy": 0.3640572390572391,
+              "openbookqa": 0.27
+            }
+          },
+          "seed": 6707,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/uniform_tape_20261023/granite_16/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "bd01bc8e4ca2568725df15a05badad41a42e7a248596e3b64cb8a4f8a12506af",
+          "source_protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14"
+        },
+        {
+          "case_id": "granite_16",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "ff9d303a242c5d96d319217de582dbe5f728f9d6f2d31676d7b1d99f5270123b",
+          "released_evaluation": "artifacts/cases/granite_16/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.3233417508417509,
+            "tasks": {
+              "arc_easy": 0.3766835016835017,
+              "openbookqa": 0.27
+            }
+          },
+          "seed": 6708,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/granite50_rerun_20261025/granite_16/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "bf1f7898c886d0c50ec64155bdc5677cfced3c6ff9c5d40b531bd4d43513daac",
+          "source_protocol_sha256": "52244180a7398fc0394f64213db691e616df649363c0eee8a8e7087702439ced"
+        },
+        {
+          "case_id": "granite_16_seed_6709",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "5c1d4ad8039fcaa59b00d7d65c53140952ac5f340d972cb0e50efda1ecd8c1ad",
+          "released_evaluation": "artifacts/cases/granite_16_seed_6709/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.32497306397306397,
+            "tasks": {
+              "arc_easy": 0.3779461279461279,
+              "openbookqa": 0.272
+            }
+          },
+          "seed": 6709,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6709/granite_16/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "c3981c03758034b578b6d1dbccbb4f851693ea345983f2eb57754701f0e2b713",
+          "source_protocol_sha256": "c3209ced660dd226a3e61268069d609708b56f4019039a58078c7fa389fa803a"
+        },
+        {
+          "case_id": "granite_16_seed_6710",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "e35640cea861032a9f0348eba010a5fec8f4bc648a8e5a105e2458e7aff9c6f0",
+          "released_evaluation": "artifacts/cases/granite_16_seed_6710/evaluations.json",
+          "role": "additional_posthoc_search",
+          "scores": {
+            "mean": 0.3187626262626263,
+            "tasks": {
+              "arc_easy": 0.37752525252525254,
+              "openbookqa": 0.26
+            }
+          },
+          "seed": 6710,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/granite50_extra_seed6710_20261026/granite_16/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "2dcb734ef825fcb2fbac1f5c039e11f98328ff32dd2380ad4e261585054b53dc",
+          "source_protocol_sha256": "c2ed967a92f25c6137c7783ac408a7f8648c67339d20e20f0add6fa2552410c8"
+        }
+      ]
+    },
+    "granite_24": {
+      "all_recorded": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 54.82603815937149,
+            "sample_std_percentage_points": 0.6945507179846576
+          },
+          "avg": {
+            "mean_percent": 44.14635241301908,
+            "sample_std_percentage_points": 0.38178909552175766
+          },
+          "openbookqa": {
+            "mean_percent": 33.46666666666667,
+            "sample_std_percentage_points": 0.9018499505645775
+          },
+          "performance_retained": {
+            "mean_percent": 83.61638128035884,
+            "sample_std_percentage_points": 0.7231361332225527
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "expert_retention_percent": 75,
+      "family": "granite",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 54.82603815937149,
+          "sample_std_percentage_points": 0.6945507179846576
+        },
+        "avg": {
+          "mean_percent": 44.14635241301908,
+          "sample_std_percentage_points": 0.38178909552175766
+        },
+        "openbookqa": {
+          "mean_percent": 33.46666666666667,
+          "sample_std_percentage_points": 0.9018499505645775
+        },
+        "performance_retained": {
+          "mean_percent": 83.61638128035884,
+          "sample_std_percentage_points": 0.7231361332225527
+        }
+      },
+      "n": 3,
+      "original_cohort": {
+        "metrics": {
+          "arc_easy": {
+            "mean_percent": 54.82603815937149,
+            "sample_std_percentage_points": 0.6945507179846576
+          },
+          "avg": {
+            "mean_percent": 44.14635241301908,
+            "sample_std_percentage_points": 0.38178909552175766
+          },
+          "openbookqa": {
+            "mean_percent": 33.46666666666667,
+            "sample_std_percentage_points": 0.9018499505645775
+          },
+          "performance_retained": {
+            "mean_percent": 83.61638128035884,
+            "sample_std_percentage_points": 0.7231361332225527
+          }
+        },
+        "n": 3,
+        "seeds": [
+          6707,
+          6708,
+          6709
+        ]
+      },
+      "reported_seeds": [
+        6707,
+        6708,
+        6709
+      ],
+      "runs": [
+        {
+          "case_id": "granite_24",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "92d22bbdbb9f3f26ab58dec6659b52586417449c35ef7609d1080c4ba7d8be72",
+          "released_evaluation": "artifacts/cases/granite_24/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.4426228956228956,
+            "tasks": {
+              "arc_easy": 0.5412457912457912,
+              "openbookqa": 0.344
+            }
+          },
+          "seed": 6707,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/uniform_tape_20261023/granite_24/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "1b5755ede9b557aabda9e5348ced72a20b847348b9c094401a8d51678efce1d0",
+          "source_protocol_sha256": "a904de56e278489b0f7b31c477e38d7f4ab3a0c2846816c76e8f537e02ac7f14"
+        },
+        {
+          "case_id": "granite_24_seed_6708",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "573179e25bc713645d666335dd4f036bfbd8545f4411c06015b1e9af672003fc",
+          "released_evaluation": "artifacts/cases/granite_24_seed_6708/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.4445673400673401,
+            "tasks": {
+              "arc_easy": 0.5551346801346801,
+              "openbookqa": 0.334
+            }
+          },
+          "seed": 6708,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6708/granite_24/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "9a53bb6ca3b997a28b94447d81a02c328a2da7207d5bbf02a7579fcf730dc369",
+          "source_protocol_sha256": "90f547a388a46e5d042f6e1cdf3de8737a980fb5c81299adc4c43b35e26fa45f"
+        },
+        {
+          "case_id": "granite_24_seed_6709",
+          "included_in_reported_cohort": true,
+          "mask_sha256": "840e230461a1d368d7a59e3e38b8ec48bd3c000af38f96c13cfb6b98461bc550",
+          "released_evaluation": "artifacts/cases/granite_24_seed_6709/evaluations.json",
+          "role": "original_cohort",
+          "scores": {
+            "mean": 0.43720033670033676,
+            "tasks": {
+              "arc_easy": 0.5484006734006734,
+              "openbookqa": 0.326
+            }
+          },
+          "seed": 6709,
+          "selection_uses_test": false,
+          "source_evaluation": "results/runs/tape_multiseed_20261025/seed_6709/granite_24/evaluations/tape_multistart.json",
+          "source_evaluation_sha256": "c0c198f5018fa8c9159d5d8f1a7946615e4cae4d6d50c0020011c0479b6eea79",
+          "source_protocol_sha256": "c3209ced660dd226a3e61268069d609708b56f4019039a58078c7fa389fa803a"
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "n": 1,
+    "scope": "ERNIE 75% search ablations, same-capacity replacement, and initial-only control",
+    "seed": 6707
+  },
+  "late_seed_note": "Granite 50% seeds 6708-6710 are the latest requested reporting cohort, not a preplanned replacement cohort. Seed 6710 was requested after observing the original results. Seed 6707 and the original 6707-6709 cohort remain released, along with the all-four-seed statistics. Each run's expert set was selected on training data before its full-test evaluation.",
+  "main_search_count": 13,
+  "primary_metric": "acc_norm",
+  "schema_version": "tape-multiseed-release-v1",
+  "score_units": "fractions in runs.*.scores; percentages in metrics",
+  "selection_uses_test": false,
+  "std_definition": "sample standard deviation across independent search seeds, ddof=1",
+  "training_performed": false
+}

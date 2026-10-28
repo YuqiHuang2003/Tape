@@ -1,28 +1,94 @@
 {
   "cases": {
     "ernie_32": {
+      "base_case": "ernie_32",
       "family": "ernie",
-      "mode": "joint"
+      "mode": "joint",
+      "seed": 6707
+    },
+    "ernie_32_seed_6708": {
+      "base_case": "ernie_32",
+      "family": "ernie",
+      "mode": "joint",
+      "seed": 6708
+    },
+    "ernie_32_seed_6709": {
+      "base_case": "ernie_32",
+      "family": "ernie",
+      "mode": "joint",
+      "seed": 6709
     },
     "ernie_48": {
+      "base_case": "ernie_48",
       "family": "ernie",
-      "mode": "joint"
+      "mode": "joint",
+      "seed": 6707
     },
     "ernie_48_allocation_only": {
+      "base_case": "ernie_48_allocation_only",
       "family": "ernie",
-      "mode": "allocation_only"
+      "mode": "allocation_only",
+      "seed": 6707
     },
     "ernie_48_identity_only": {
+      "base_case": "ernie_48_identity_only",
       "family": "ernie",
-      "mode": "identity_only"
+      "mode": "identity_only",
+      "seed": 6707
+    },
+    "ernie_48_seed_6708": {
+      "base_case": "ernie_48",
+      "family": "ernie",
+      "mode": "joint",
+      "seed": 6708
+    },
+    "ernie_48_seed_6709": {
+      "base_case": "ernie_48",
+      "family": "ernie",
+      "mode": "joint",
+      "seed": 6709
     },
     "granite_16": {
+      "base_case": "granite_16",
       "family": "granite",
-      "mode": "joint"
+      "mode": "joint",
+      "seed": 6708
+    },
+    "granite_16_seed_6707": {
+      "base_case": "granite_16",
+      "family": "granite",
+      "mode": "joint",
+      "seed": 6707
+    },
+    "granite_16_seed_6709": {
+      "base_case": "granite_16",
+      "family": "granite",
+      "mode": "joint",
+      "seed": 6709
+    },
+    "granite_16_seed_6710": {
+      "base_case": "granite_16",
+      "family": "granite",
+      "mode": "joint",
+      "seed": 6710
     },
     "granite_24": {
+      "base_case": "granite_24",
       "family": "granite",
-      "mode": "joint"
+      "mode": "joint",
+      "seed": 6707
+    },
+    "granite_24_seed_6708": {
+      "base_case": "granite_24",
+      "family": "granite",
+      "mode": "joint",
+      "seed": 6708
+    },
+    "granite_24_seed_6709": {
+      "base_case": "granite_24",
+      "family": "granite",
+      "mode": "joint",
+      "seed": 6709
     }
   },
   "primary_metric": "acc_norm"

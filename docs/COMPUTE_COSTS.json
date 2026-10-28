@@ -103,7 +103,7 @@
           "550.144.03"
         ]
       },
-      "label": "Granite 50%, main result",
+      "label": "Granite 50%, seed-6708 reference",
       "last_invocation_elapsed_seconds": 399.0,
       "local_cache_hits": 0,
       "new_proxy_scores_last_invocation": 272,
@@ -418,7 +418,7 @@
           "550.144.03"
         ]
       },
-      "label": "Granite 50%, archived run",
+      "label": "Granite 50%, original seed 6707",
       "last_invocation_elapsed_seconds": 814.0,
       "local_cache_hits": 0,
       "new_proxy_scores_last_invocation": 282,
