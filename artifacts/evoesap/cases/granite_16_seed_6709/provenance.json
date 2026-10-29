@@ -1,0 +1,20 @@
+{
+  "completed_at": "2026-10-28T08:44:27+00:00",
+  "parameters_unchanged": true,
+  "selection_uses_test": false,
+  "source_files_sha256": {
+    "candidate_masks.npy": "f8cbecda44608db9f365dcedfe6fd252c529509ad02358ee206e2edb95652799",
+    "frozen_selection.json": "bcb5604418bc04338388a22358f4c37567fad3bab12d265ecbe6df25ac1d5a2c",
+    "proxy_data.json": "2b3068e3edcd9dd971346d8101f302f88ae860d5f966a78ead8d969a5d2a60df",
+    "search.json": "ed4c92f1c8e6c071a925e70aa997ce0f357fb058f0bc84481705d700d96276dc",
+    "state.json": "f2875e789fec99ddcb44e207ec96d757d60ae6eb379ab4bd11ef18fc8f56bc62",
+    "teacher_holdout.json": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169",
+    "teacher_search.json": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841",
+    "test.json": "a4f484f9871a1e59650e910e80063d3e32c237b215a0d696263c6b36b9fbf7fe",
+    "winner_mask.npy": "5045f418199630a3cc9ecd83ae589525240ffab9884f41db95ec1fabe4809b9a"
+  },
+  "source_protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0",
+  "source_run": "results/runs/strong_baselines_20261028/granite_16/evoesap/seed_6709",
+  "total_worker_wall_seconds": 738.8714589327574,
+  "training_performed": false
+}

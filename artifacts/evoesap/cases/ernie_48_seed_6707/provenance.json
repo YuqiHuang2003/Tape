@@ -1,0 +1,20 @@
+{
+  "completed_at": "2026-10-28T14:41:02+00:00",
+  "parameters_unchanged": true,
+  "selection_uses_test": false,
+  "source_files_sha256": {
+    "candidate_masks.npy": "96b988dfced8e45454ff7b1d7e8fc5b1c9285f9ced3b82d64c2126b8514ab86e",
+    "frozen_selection.json": "78387a0d4b05bd86c03660e7a27f7b03f395f33200f191986991de66290a021f",
+    "proxy_data.json": "4d6bc8766c1f4fff843357afdbe4eab8a2b084f2961da6776b6c7bfb8052b326",
+    "search.json": "7e8aacca77f72cf1662085a2356429d79b69da1de00119aebc8eb5181ea76eb4",
+    "state.json": "6dcebb499e46f3b6349ecdd0fde3056eb0889337cb577dc42a94aece6e4ff9d5",
+    "teacher_holdout.json": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015",
+    "teacher_search.json": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca",
+    "test.json": "d7926de33467f20944371827de2f054ac89d49c64a58eb6717f53ff088c935f2",
+    "winner_mask.npy": "d5475bce8bfa9974c3f6fd95d689f30327381e94405f62e31d5e54b1fb21c961"
+  },
+  "source_protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0",
+  "source_run": "results/runs/strong_baselines_20261028/ernie_48/evoesap/seed_6707",
+  "total_worker_wall_seconds": 1373.4180592857301,
+  "training_performed": false
+}

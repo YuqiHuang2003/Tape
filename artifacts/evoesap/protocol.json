@@ -1,0 +1,44 @@
+{
+  "artifact_policy": "Candidate masks, all search/holdout scalar metrics, teacher-cache metadata, frozen decisions, and compact full-test evidence are included. Dataset text, token IDs, teacher probability caches, and model weights are not redistributed.",
+  "created_at": "2026-10-28T07:08:55+00:00",
+  "data_sampling_seed": 6707,
+  "generative_benchmarks": false,
+  "method": {
+    "adaptations": [
+      "MCQA prompt/gold-answer calibration replaces the original paper's corpus",
+      "256 unique evaluations and TAPE layer bounds replace the original search budget/space",
+      "an independent train-holdout stage replaces direct search-set winner selection",
+      "initial random allocations use exact uniform feasible-count sampling"
+    ],
+    "bounds": "same per-layer bounds and exact global budget as TAPE",
+    "fitness": "full-vocabulary overlap; mean answer positions then questions",
+    "holdout_questions_per_task": 256,
+    "paper": "https://arxiv.org/html/2603.06003v1",
+    "ranking": "the unchanged REAP rankings used by the released TAPE reference",
+    "search": "32 initial + 8 generations of 28 unique offspring; 4 elites",
+    "search_questions_per_task": 64,
+    "selection": "maximum independent train-holdout ESAP, mask SHA-256 breaks ties",
+    "shortlist": "24 highest search-ESAP candidates, replacing last with uniform if absent",
+    "temperature": 1.0,
+    "variant": "REAP ranking + full-vocabulary ESAP, budget-matched adaptation"
+  },
+  "primary_metric": "acc_norm",
+  "schema_version": "released-evoesap-protocol-v1",
+  "search_seeds": [
+    6707,
+    6708,
+    6709
+  ],
+  "selection_uses_test": false,
+  "source": "results/runs/strong_baselines_20261028/protocol.json",
+  "source_implementation_sha256": {
+    "src/dsai6707/esap.py": "dbd05ec519a3cb628ab37a5b5ca864f48bbf2a2047d064b658283a8cfedb30f5",
+    "src/dsai6707/evoesap.py": "d91db87b469e08b55f58e8d340e55fa165320b02a6a210bc3417a34572dfff5d"
+  },
+  "source_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0",
+  "tasks": [
+    "arc_easy",
+    "openbookqa"
+  ],
+  "training_performed": false
+}

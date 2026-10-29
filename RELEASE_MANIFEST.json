@@ -7,15 +7,15 @@
     "historical reports",
     "raw test prompts"
   ],
-  "file_count": 263,
+  "file_count": 381,
   "files": {
     ".gitattributes": {
       "bytes": 168,
       "sha256": "183a168f4ddab79212a12bf994b7336c0e5c5ee7e45382d6c6875e368a458182"
     },
     ".github/workflows/tests.yml": {
-      "bytes": 620,
-      "sha256": "ef9600d08f0d33e88306d658272c44f0c6ddf6ccef579c437e74a67ada9cb980"
+      "bytes": 802,
+      "sha256": "2bdf36bccd12d489981346f44267797d24204c4728801be60e4e7c4d50eae74f"
     },
     ".gitignore": {
       "bytes": 458,
@@ -26,12 +26,12 @@
       "sha256": "5d7deeaff0d6f92ef5c74658a46e4750ccbcd0602efcdfd24cd7ec6ae7c822f9"
     },
     "README.md": {
-      "bytes": 5944,
-      "sha256": "2cd05add131ab37e153fd1068af5158bc1d20a348fd47c67717bbc0d4ac60094"
+      "bytes": 7881,
+      "sha256": "e6a871b5e84748a052d40fb1042647b857657fc6d7f271b7a2fe5aa3dea6f73e"
     },
     "THIRD_PARTY_NOTICES.md": {
-      "bytes": 1615,
-      "sha256": "fd43447f32d13b84d5744948b0b2435878d684f5c8b1e3eaa022cf19ba77a1f8"
+      "bytes": 2248,
+      "sha256": "4d68cc01288e6a147c30badbd319ee0ae7613751437a44e46d073edd76a8be2f"
     },
     "artifacts/cases.json": {
       "bytes": 2107,
@@ -733,6 +733,498 @@
       "bytes": 7377,
       "sha256": "68f95f46bf965a5edae28033913848a72f0fee093fdf13eb00d38d4ee4d4d7c6"
     },
+    "artifacts/evoesap/cases.json": {
+      "bytes": 2639,
+      "sha256": "df4eba96102348b35a5d343a7de30c1b43106dce62657fd0240accd9b55694ea"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "6d31bf350b4ad67a41f64d5960ed9e7ee596bdee8b494a03e2f1233394a7cf34"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/config.json": {
+      "bytes": 908,
+      "sha256": "501de7a5dd38c4d8299b3dbbbf3cbbebf0e102166c7b008bdf3fdf61f0e1b0c7"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/evaluation.json": {
+      "bytes": 4233,
+      "sha256": "9a87dc5b7f571429243d57fcc71c0588c72dc63bed10610b370afdbec6f19b48"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/frozen_selection.json": {
+      "bytes": 4517,
+      "sha256": "9aa51fb274f828c6d4c097bad431cbbe627d7b9c9900c36862a200df4600ea64"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/metrics.json": {
+      "bytes": 300035,
+      "sha256": "0e7ffdf16b8df9fa3cced71992786055dcf0e766767b71ebe27a1ce1fb0726d4"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/provenance.json": {
+      "bytes": 1229,
+      "sha256": "f76f514b7fc2a30b5f38436d9700c2edd10e7424b8ceec05f76fd16d99a7da3a"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/search.json": {
+      "bytes": 214891,
+      "sha256": "e76a074a3dae5a35635ba42cad339e6ef52b343258eb99f2fe698df42c8a0eb7"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6707/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "d8c6f40d83a09948de380996d8c26a6c48cd718bad4b023ca242743dc6c7dfce"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "28b2c6db0cf8512af3c025ba6a18e12ab344c93e0bd78da39314ababdd5815cc"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/config.json": {
+      "bytes": 908,
+      "sha256": "86cc3948a5f74448d77fbc13b13ebcb10847750ad2dcb948713b9974fb179a39"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/evaluation.json": {
+      "bytes": 4235,
+      "sha256": "aa86d96f08538fdc47042673bf69eddbf0a340ea5a0a7048b1c33db0ea6731ff"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/frozen_selection.json": {
+      "bytes": 4510,
+      "sha256": "a422fe1305cefd10873a4cea0e2522d18e212229c24d1666c8f9f1d8eee3a621"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/metrics.json": {
+      "bytes": 300057,
+      "sha256": "44d3eca49eac8a6ed32a1bca65e6456101bad0459cef9e0633ac6fab036019bd"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/provenance.json": {
+      "bytes": 1230,
+      "sha256": "d0157c33b5480d09b7668e701ca42b440ca89cf1ca909e528eb5b3a0c1d17f39"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/search.json": {
+      "bytes": 218070,
+      "sha256": "81116573f93f2a82f713d5521400cec015a93fc8be967bb97f5c62422b54a5fa"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6708/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "5bc7728ff53ccc305bd7d21c1670a058d67003e30d48803a87ab3b8ae85d40e2"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "a0d7f96a3de700f24d2df744ff0b97106a64b8bc6553814eae478064ca9850e0"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/config.json": {
+      "bytes": 908,
+      "sha256": "2d320c5d9dca6f6434f88b965343960ae32e2baae4e59483bd5c87b3cacf9cfd"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/evaluation.json": {
+      "bytes": 4238,
+      "sha256": "0ef9cd3d10b13e015f3f571bda945eaac51d60adbb1348ff568c08931d696b04"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/frozen_selection.json": {
+      "bytes": 4515,
+      "sha256": "e8fd440dee2973770fb05688139ec20a69095fa116aa7a66d3ac9c832efd9ff1"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/metrics.json": {
+      "bytes": 300087,
+      "sha256": "c36f3dd41e4a5a7cddf941d5dc7a4279e29a7a3ebb751e07f06945d76d29d6cd"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/provenance.json": {
+      "bytes": 1230,
+      "sha256": "10f5a891db6cdc21c0f72112eb1103cbc1f3a11480945f794bc3158e7c563375"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/search.json": {
+      "bytes": 216730,
+      "sha256": "009ba331972fda9b0a9eff06cf81ef0e234f458d397fa88740d37a8c854c346a"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_32_seed_6709/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "d8f6fce019886634200d01143434b23e7074e2c879e5eb124fc55930859fe2a7"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "96b988dfced8e45454ff7b1d7e8fc5b1c9285f9ced3b82d64c2126b8514ab86e"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/config.json": {
+      "bytes": 909,
+      "sha256": "104d316d2197982193d3c654a07ddc4e6f62d03e2299a0119ab92d64537ddbf3"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/evaluation.json": {
+      "bytes": 4234,
+      "sha256": "10636f20abf00a9f346915aeed4b580fa4f193ae2ce1a5a05c4f243c24adfc1c"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/frozen_selection.json": {
+      "bytes": 4499,
+      "sha256": "78387a0d4b05bd86c03660e7a27f7b03f395f33200f191986991de66290a021f"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/metrics.json": {
+      "bytes": 299447,
+      "sha256": "ea6f3c2321cb795edde604b4111a1fbef1eb3b39aba573633874424e8f8e36f0"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/provenance.json": {
+      "bytes": 1231,
+      "sha256": "bf6884f5a5f61b37f5d8f72e5af0446f5079918edf2750f4d3fdcb2a1a39e609"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/search.json": {
+      "bytes": 215519,
+      "sha256": "7e8aacca77f72cf1662085a2356429d79b69da1de00119aebc8eb5181ea76eb4"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6707/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "d5475bce8bfa9974c3f6fd95d689f30327381e94405f62e31d5e54b1fb21c961"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "f4b069f470f3b319e31d28d69a3b4ca3c6226edacfc80427f8b3fe50065dc268"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/config.json": {
+      "bytes": 909,
+      "sha256": "92c7e8b684d2928f44ed14446d58f36b80bc38947a4237690b066ae0b9eb8252"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/evaluation.json": {
+      "bytes": 4236,
+      "sha256": "c5a394f6298993498c30a4ad9c9da6e5970b15f2685db49e06e04df11244dff8"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/frozen_selection.json": {
+      "bytes": 4503,
+      "sha256": "70e28ffb717a96e0c9fda2a085d97f8775f3af6e539c7e3cd31f20fb84b0a8a1"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/metrics.json": {
+      "bytes": 299474,
+      "sha256": "92008ce247d8d237235bd722c6c5a3acd54e1c32afdb7ff4e4bf85b75d54d428"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/provenance.json": {
+      "bytes": 1231,
+      "sha256": "8dca97c1d96a6f316c24cb4e1e71d7bbe4abd47c5960d29b01acab87ec6769d4"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/search.json": {
+      "bytes": 216317,
+      "sha256": "3fccd25f04203dd56bf95e9c68b2fd68a5f0d2ab99a58b58e1cbd3cfe737915b"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6708/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "ad2d033ca650acb205cb0967127aa66c407b74bca81c8eab18ddc0a8ba06be24"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/candidate_masks.npy": {
+      "bytes": 442496,
+      "sha256": "5079f73738fedacee8ff081425b689f02a5af844d32ba3f024b2960845fa1408"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/config.json": {
+      "bytes": 909,
+      "sha256": "2cff6701e69ade3549a86b709201b79ac1194f46738a2c2bea17833d6ebd9439"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/evaluation.json": {
+      "bytes": 4235,
+      "sha256": "699ce939fdf93002c45555087808906560cf1b005e353bcedf870a58973de525"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/frozen_selection.json": {
+      "bytes": 4501,
+      "sha256": "f18c29718907df639a5fe5c4c2fb4688dbf1f82a65cd43460bac98f3f37ddf24"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/metrics.json": {
+      "bytes": 299429,
+      "sha256": "9190f5c88c103c3f1a595eeba133269350fabfb47ddaddd9bf37d94bacb0fd1c"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/provenance.json": {
+      "bytes": 1230,
+      "sha256": "0a546e455e719bf43d3d75a7c1a7f7362e29ec29eb8c8ea5e2a829675edfaaf8"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/search.json": {
+      "bytes": 217400,
+      "sha256": "ee5dfcf969e30d06dc1b3693b7d845c42a148fb83adb6821e45fc1346a017c20"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/teacher_holdout.json": {
+      "bytes": 37434,
+      "sha256": "16d21fdafad635ae3eb0501f23261b9ccfbf8fc8fd665669016e439dc786c015"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/teacher_search.json": {
+      "bytes": 9782,
+      "sha256": "2d9b83bab56452908855dae2c16b47bf9c8d6c2a9ef5ab6f3714fd10390365ca"
+    },
+    "artifacts/evoesap/cases/ernie_48_seed_6709/winner_mask.npy": {
+      "bytes": 1856,
+      "sha256": "9a1ea72c194a60c5a461919a89867fe7a4e16475cf4b714c37578262b3d4f9e9"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "354da564eeb0707c238d8151e60e5e58dc7a89071c5bf53e2b139dac8a16d095"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/config.json": {
+      "bytes": 912,
+      "sha256": "5f23205f65a7b7e43109dc5360f3b0d69f03bea00230284696a5eb73ad800c6d"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/evaluation.json": {
+      "bytes": 4237,
+      "sha256": "a50ba33d96ec8b1c8612e789aebb4531c67ed005de2a7588ad6cdc92e05a2f2f"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/frozen_selection.json": {
+      "bytes": 4512,
+      "sha256": "7450f22f0448f4a4c38f379d445f6ecb983257353f0008a1dbfc13bc17c11801"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/metrics.json": {
+      "bytes": 300241,
+      "sha256": "1369ae3c1c49f462dfbb8f5469f831000685c968c4670e4f7624c6af8bf6adbc"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/provenance.json": {
+      "bytes": 1231,
+      "sha256": "acff98496c641873199ad5c065ad2df999c8209e0914fe24f97d3ad2696d385d"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/search.json": {
+      "bytes": 205992,
+      "sha256": "65af8fe1cfe56c10920cc149581fa17bb2e2cda4b3a7f3388d57ad30fd61755e"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6707/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "50d3e0cadbe737076d48d0fb5990608e53058f4c072d0c57d43f8da1d3e06bb9"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "70921dfb6752b38b3e1b45c60ba81a0e6f0e33bb8ada933910ea7471f880d290"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/config.json": {
+      "bytes": 912,
+      "sha256": "b4891e9e9158b50670fd6b00e8396042c9bb48d76a35b67db1335a1a3ce1ee91"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/evaluation.json": {
+      "bytes": 4239,
+      "sha256": "34d599351360a19ab8ec55c2e9a4a84e8a6047bbbac5fcceba0ef7db9e89591e"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/frozen_selection.json": {
+      "bytes": 4519,
+      "sha256": "81d3c3ea28fc66a9cd0855eb74a07547206357c4689f6fb2a38bd0a2719ab018"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/metrics.json": {
+      "bytes": 300183,
+      "sha256": "b2e11f557ab229151cf2a539271bf5866c0e75ef7137c494752a5fa7ae842ae7"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/provenance.json": {
+      "bytes": 1232,
+      "sha256": "b87865ae89797240375aa9b18cf67823f8b4e1e3ae6e7f56d566faddad55d4fd"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/search.json": {
+      "bytes": 207273,
+      "sha256": "bafc2976fe5281d2a3d8ec5d8a08e4bc81c4ff1136044b13be2b768efbe24e9c"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6708/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "c26dc55f43ff040222e4f73f4b147314e16d586efe1ac48007a216af0f56a388"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "f8cbecda44608db9f365dcedfe6fd252c529509ad02358ee206e2edb95652799"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/config.json": {
+      "bytes": 912,
+      "sha256": "ac08d4f02381c1e4f278b039683abe2b7d7ea316a5963b9dd5b6186e5db54c9e"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/evaluation.json": {
+      "bytes": 4240,
+      "sha256": "bfe9fc5fc526ee9b2c4eacee02f2c210ce9e4b6a5a198f7d91b962bf7ba93ad5"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/frozen_selection.json": {
+      "bytes": 4512,
+      "sha256": "bcb5604418bc04338388a22358f4c37567fad3bab12d265ecbe6df25ac1d5a2c"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/metrics.json": {
+      "bytes": 300163,
+      "sha256": "5c4855559156c64bb923c38a3b16c6d3b11b1bd151d086513b9877449ed513b8"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/provenance.json": {
+      "bytes": 1232,
+      "sha256": "026a26e722635187996b85c55d9ddd667ff7795b3f5d40987feb84224a0243d2"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/search.json": {
+      "bytes": 208469,
+      "sha256": "ed4c92f1c8e6c071a925e70aa997ce0f357fb058f0bc84481705d700d96276dc"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_16_seed_6709/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "5045f418199630a3cc9ecd83ae589525240ffab9884f41db95ec1fabe4809b9a"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "4014f3ac6223dcfa6f392e1e6667f25a7b55070c7e183c904bf5bfd8331b9793"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/config.json": {
+      "bytes": 912,
+      "sha256": "01bff854bb175308c18221272e916f88faa04bc2674337f7b971f7910cbe6691"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/evaluation.json": {
+      "bytes": 4237,
+      "sha256": "8279baa4a22270808d62eb52fd93dd2c1603d5660af7a0d19d4dc47c2b08f150"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/frozen_selection.json": {
+      "bytes": 4501,
+      "sha256": "5b6f1b19ecefb94a278855d5dbda7fed3aff0f7091cabc8e628e2c5b15fb7851"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/metrics.json": {
+      "bytes": 299464,
+      "sha256": "65d2f0f3a81eabd5d8d90a2abc71e193ece51dff980e8bd79ff1897dd6ddbcce"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/provenance.json": {
+      "bytes": 1233,
+      "sha256": "f2e3f2e8f1620b97d221d99498d390cabbc0f82af2993e7cfb58f9d575f0d142"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/search.json": {
+      "bytes": 207076,
+      "sha256": "6933a665a05865120233f99c81aac33b4edf1ecfcf0942f29a3de7b710909866"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6707/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "5fc23ff06c7413d664ff8ea3ebdb671e429979980d85a5ce4bb6c3e6946da2b6"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "9fd43f22a9037aa53bc8d2772491a78c2c5fbba984f8c3a8e499a5ceea9abbbe"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/config.json": {
+      "bytes": 912,
+      "sha256": "b0e66e7fd15d0dbdf39a8051d51b3551b47162a016363e864be6dbba92d1cd54"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/evaluation.json": {
+      "bytes": 4240,
+      "sha256": "786383c343d3d66a0d9e2f125a0dd6fa53f8db69aca3231319c2fe8a5ec010f6"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/frozen_selection.json": {
+      "bytes": 4502,
+      "sha256": "f48a881549d5f197f03c4b4426d8b874520b09b769754b26f761e6f11bc4c9c3"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/metrics.json": {
+      "bytes": 299412,
+      "sha256": "664aa199570e5c4f6ead242bd40332b1c5a6d0c4683d45c277c18fe1c5a8a3d7"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/provenance.json": {
+      "bytes": 1232,
+      "sha256": "78c613822e933f9b98f22674248daf7054ba20fb011ec085635b51e53fc02c85"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/search.json": {
+      "bytes": 205665,
+      "sha256": "310cc569fde8e6d2593ba95e58c92f8f8011c9fcc46142b2bb981b087a3d6784"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6708/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "5658cc8ca10035e244e11a5baddf170819ba7d8b9764228d4a9a704c68f1c641"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/candidate_masks.npy": {
+      "bytes": 196736,
+      "sha256": "0276f5d17ab5a23fd8783285dbcc6ebe2dd5de1f68aedf0b7f1201bb47519e3a"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/config.json": {
+      "bytes": 912,
+      "sha256": "c48a2e3ee687b2fc499a8f7f9a219f7ab783f9e5d5d53ae51fc0c8921f775c2d"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/evaluation.json": {
+      "bytes": 4240,
+      "sha256": "4807fd32b1ebae11e13450c6e7496cb3a763a590659f2773a3e28f9af0843924"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/frozen_selection.json": {
+      "bytes": 4503,
+      "sha256": "6db2b3cf81857d6977eddb480a5378ef67e49e22a872e725e5e5e3dfb1a6c561"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/metrics.json": {
+      "bytes": 299485,
+      "sha256": "b141c1b751434e141766ba7c29c12e2d55f0c74c4a063ca0a3a12bb8c60670ce"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/provenance.json": {
+      "bytes": 1232,
+      "sha256": "701485f805379e8b0e716188cd191159acf7d7dea8cfbaa39f7828d73a802fec"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/search.json": {
+      "bytes": 207605,
+      "sha256": "1e524177d36db7be71d35ee0928ea27bd6ba9706b037f07db8bd044b7dd1984a"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/teacher_holdout.json": {
+      "bytes": 37432,
+      "sha256": "5b6be37bd9b1b74f32c9d1f196e61a4564b818e1c7bedacc4e4e2a602a404169"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/teacher_search.json": {
+      "bytes": 9781,
+      "sha256": "2c64feefc2db7728851adaad7bbb3e353e167e2306d6bab811857fec58be2841"
+    },
+    "artifacts/evoesap/cases/granite_24_seed_6709/winner_mask.npy": {
+      "bytes": 896,
+      "sha256": "524bfed51b1812349ec1f6146699284a128cddc4588f89136912417d705f8beb"
+    },
+    "artifacts/evoesap/protocol.json": {
+      "bytes": 2120,
+      "sha256": "1bd2ff83210c09cac77c7bd0b79e17cb3e07057514bb403f0296b0dba3295e18"
+    },
+    "artifacts/evoesap/summary.json": {
+      "bytes": 9224,
+      "sha256": "ae830fe6221db61985a43f86a6f5bdaf3ccca7dd5408df68e5030a2358f95bd4"
+    },
     "artifacts/expert_analysis.json": {
       "bytes": 4059,
       "sha256": "933d8bafb672cbd42eb32a16d28fad9089f772b190f8a9c2e0a4c6f7ad415551"
@@ -750,36 +1242,32 @@
       "sha256": "13af0bf739d45b1855d78631bbdcebca956b8a006deae2a4e77311b7bd04a93c"
     },
     "docs/COMPUTE_COSTS.json": {
-      "bytes": 15865,
-      "sha256": "0e967553424a003c9b7745d62f0b573baa96347e99f46997af97202f0be86e23"
+      "bytes": 18120,
+      "sha256": "a236d3215c56b075d240ff6b3366a05bff452ed6831f4d96c70a86301376f601"
     },
     "docs/COMPUTE_COSTS.md": {
-      "bytes": 4401,
-      "sha256": "0b0f934d5072cc2dd7ed5ba64d4e8d40cc703279a03346b5634a4a079e2baf08"
-    },
-    "docs/FIGURE_DESIGN_PLAN.md": {
-      "bytes": 3264,
-      "sha256": "a0045def7d7eac206c9c845d00476aa13e1e348f76fffffb268d0bb791ee8ecd"
+      "bytes": 4213,
+      "sha256": "d4127084531da63a16852bcdc214d768273c0ed8321890b6e4207e91112ff7d5"
     },
     "docs/REPORT_PROVENANCE.md": {
-      "bytes": 2586,
-      "sha256": "e5776c314b9bf94fdefc93134945733b578e0327e972bb6fa4db9e782c31d6d4"
+      "bytes": 3528,
+      "sha256": "e404ef0a8b8794248cd4aeeadfc7282f01eba58bfa7fbe93bb86770abc1c3103"
     },
     "docs/REPRODUCIBILITY.md": {
-      "bytes": 9828,
-      "sha256": "1be22e6615dc1b0dd850b2671832cd3f8b99a9f52c38c8f786d8293fb49ded16"
+      "bytes": 13830,
+      "sha256": "2d6967e7b4ff75b4c9d768fc8b3e02f2903d6d20672896a6953a3da630751f08"
     },
     "docs/RESULTS.md": {
-      "bytes": 5662,
-      "sha256": "5fc323fd3037c2bc923c6578562e780e6c04d12565154ea2b2f846ec9f7a3714"
+      "bytes": 7391,
+      "sha256": "f32a70b72ac3530671b3cebe9cc83df4564620d8f887d4874e3cc40e679a7312"
     },
     "docs/VALIDATION.md": {
-      "bytes": 3437,
-      "sha256": "5be90ebdb9831ba7aa9f2621f3a3f62c9bb11487bcfb6b4f6d6e513057fd5633"
+      "bytes": 2755,
+      "sha256": "4b16bb0dd916eb5968f71db3eaa8a88d1bde11299765ee15e1990c923a5fc78b"
     },
     "docs/figures/README.md": {
-      "bytes": 3887,
-      "sha256": "f78d0072e62aa4a5e81f216bd72045831e4591ca3700a4c4fa240224982856a0"
+      "bytes": 3876,
+      "sha256": "fe364280ad4765b2b43b4b8fe814ed26e1a2d69fe4c7d0fffef866dcc038079c"
     },
     "docs/figures/all_figures_preview.png": {
       "bytes": 380454,
@@ -815,15 +1303,11 @@
     },
     "pyproject.toml": {
       "bytes": 755,
-      "sha256": "a368bdaa4095e3d88117a3f8a6e896170ec721634c0c4b1a1f34d3f3bf9af971"
-    },
-    "report/legacy/main.tex": {
-      "bytes": 33222,
-      "sha256": "a889d7a5d774ee54cb14a8427bffb44bfde5b5b2f6e21f350428eda980354596"
+      "sha256": "ec2595b0bcfc926730214da70d6cc050bcd235e6ca007e7c7e3189fe1aef4c83"
     },
     "report/report.pdf": {
-      "bytes": 505243,
-      "sha256": "f17f1aef77511fd114d6952ac7cb6828f215c17b5d4fea871138034f20753444"
+      "bytes": 506666,
+      "sha256": "95a973251785ad8aacf47ef9d142673cb838111b287a0674f2810cd5e03e668c"
     },
     "requirements-figures.txt": {
       "bytes": 110,
@@ -854,12 +1338,16 @@
       "sha256": "017ab10c32873119de9ff575d163451cfccccfb02eb409983337726399996023"
     },
     "scripts/generate_paper_figures.py": {
-      "bytes": 5085,
-      "sha256": "8a971dac8654cde63e4274f8b43ac829e0feca4d8f5a0fdeca0e011d3f1048af"
+      "bytes": 5028,
+      "sha256": "7659592e9002d41689c93c0cb792750555e5442bc429f7679573a03d2285577d"
     },
     "scripts/prepare_released_ernie.py": {
       "bytes": 2201,
       "sha256": "e915f27e6849e66e9488e70f1c8f5650f1e60bd63c57787e1e1200f856f412b8"
+    },
+    "scripts/reproduce_evoesap.py": {
+      "bytes": 21120,
+      "sha256": "28002ce8a8f9c1b3bea6661c34abea0a3d177a1e85d5da8dfa067c7e2e03fec0"
     },
     "scripts/reproduce_tape.py": {
       "bytes": 19824,
@@ -893,17 +1381,9 @@
       "bytes": 236,
       "sha256": "887302b9d0c2eb39d483e0b2aeb0f4e2e1fb94bf0d5968d15f79196fc13c7947"
     },
-    "src/dsai6707/__main__.py": {
-      "bytes": 62,
-      "sha256": "19f07de3d1765a6803d4332ab1e67346381236f7769f47640e73849922394790"
-    },
     "src/dsai6707/artifacts.py": {
       "bytes": 3120,
       "sha256": "9feede21d326b7088e644e15d5a6868c29417a5901e770dcb3963a70428afc23"
-    },
-    "src/dsai6707/cli.py": {
-      "bytes": 95819,
-      "sha256": "cec9417acdf4aaa58716567a18fbb6fa3e08ac216111b8d7d26bace1b5604a16"
     },
     "src/dsai6707/coefficients.py": {
       "bytes": 5698,
@@ -921,17 +1401,21 @@
       "bytes": 12127,
       "sha256": "f6a0560325278bc3a3c255f0564300cc1527ddbc383fe8ebd53ec4ccb6e31d06"
     },
+    "src/dsai6707/esap.py": {
+      "bytes": 17258,
+      "sha256": "dbd05ec519a3cb628ab37a5b5ca864f48bbf2a2047d064b658283a8cfedb30f5"
+    },
     "src/dsai6707/evaluation.py": {
       "bytes": 19405,
       "sha256": "c9e40ddf186530142d1261bde60995c80699095b62a2277a4dd03eddf1900a3e"
     },
+    "src/dsai6707/evoesap.py": {
+      "bytes": 17740,
+      "sha256": "d91db87b469e08b55f58e8d340e55fa165320b02a6a210bc3417a34572dfff5d"
+    },
     "src/dsai6707/evolution.py": {
       "bytes": 29973,
       "sha256": "b3bed5ba20cefa27608fdf38b51e38331a4ca77427d4fda8ce339ace3b3e20db"
-    },
-    "src/dsai6707/fusion.py": {
-      "bytes": 2560,
-      "sha256": "e37c137132719aba72ba43ab9577dfc095a12b1f4d235f1aa0c16df1c90943eb"
     },
     "src/dsai6707/granite.py": {
       "bytes": 47510,
@@ -977,26 +1461,6 @@
       "bytes": 50012,
       "sha256": "3f6cd24a654abf86dbe4bb30f268e9c053c97d3c4ac533cef81318db6a7a9413"
     },
-    "src/dsai6707/pruning_scalar_ea.py": {
-      "bytes": 17678,
-      "sha256": "1f6a9aff5325081af707bd6483dc32d9e19a1efc5b79e7f1e85b8b8c30538aaf"
-    },
-    "src/dsai6707/pruning_search_controls.py": {
-      "bytes": 6727,
-      "sha256": "504542950588ca8fd9866afb4a7d4aa8b7be4a97fe6e5b7c7fbbeca65cd24121"
-    },
-    "src/dsai6707/routing.py": {
-      "bytes": 1707,
-      "sha256": "ec1df4d300e12f4715732c728862c24580beddfc109462fd73eae29de191bb40"
-    },
-    "src/dsai6707/smoke.py": {
-      "bytes": 6795,
-      "sha256": "a7d0bb7e2876f1aae440065a897b765ee88b302ec72436550897dc47376b34bd"
-    },
-    "src/dsai6707/summarize.py": {
-      "bytes": 67603,
-      "sha256": "917fcd1731f0632caf9289cbe4c39a1b79d3b8723e81527d0f87e1023f4954bc"
-    },
     "src/dsai6707/task_choice_proxy.py": {
       "bytes": 35716,
       "sha256": "fafb3961c6f0e62410834d0d055c9b153f960f1d4cb22d45427311609fccee6b"
@@ -1004,6 +1468,14 @@
     "tests/test_ernie_pruning.py": {
       "bytes": 6012,
       "sha256": "0fcf9f5153711d67bb64e4233c0435ea464074eb5d145d856c08dc99d635255f"
+    },
+    "tests/test_esap.py": {
+      "bytes": 10178,
+      "sha256": "d43b75e8a2a12b8d2b0e62c03309edc7717ad570b7b62f9005063583e01af94b"
+    },
+    "tests/test_evoesap.py": {
+      "bytes": 6694,
+      "sha256": "b48e49ed6fe7b250637e76bff34f0a4c914f30a28afc31d1524dbd612cdeb89e"
     },
     "tests/test_nsga2.py": {
       "bytes": 6834,
@@ -1025,9 +1497,9 @@
       "bytes": 2626,
       "sha256": "340d0572241db71b1e1dc6592dc09eb2ea95d5e17a9e0c2419e04be30f1f15af"
     },
-    "tests/test_pruning_search_controls.py": {
-      "bytes": 4011,
-      "sha256": "4deb5aae688e34c02c6fbcfdb7b84d1d5a899e5454874aa3117fdb28d69966e4"
+    "tests/test_reproduce_evoesap.py": {
+      "bytes": 5347,
+      "sha256": "606ed381bde6426bfd56f2031cfeed60b848aeb9cdda67b1b7f516061f8180ef"
     },
     "tests/test_reproduce_tape.py": {
       "bytes": 4808,
@@ -1064,6 +1536,6 @@
   },
   "language": "en",
   "repository_url": "https://github.com/YuqiHuang2003/Tape",
-  "schema_version": "tape-github-release-v2",
-  "total_bytes": 35080397
+  "schema_version": "tape-github-release-v3",
+  "total_bytes": 45633030
 }

@@ -1,0 +1,35 @@
+{
+  "family": "ernie",
+  "reference_case": "ernie_32",
+  "reference_inputs_sha256": {
+    "proxy_data.json": "4d6bc8766c1f4fff843357afdbe4eab8a2b084f2961da6776b6c7bfb8052b326",
+    "rankings.npy": "e2ffa010d386c8442ad219723ca8e7bd4dfd5c70bacb63ce441e6142e43203b4"
+  },
+  "retained_per_layer_reference": 32,
+  "schema_version": "released-evoesap-case-v1",
+  "search": {
+    "elite_size": 4,
+    "generations": 8,
+    "initial_patterns": [
+      "uniform",
+      "up",
+      "down",
+      "mid",
+      "mid-neg"
+    ],
+    "max_duplicate_attempts": 8192,
+    "max_mutation_attempts": 4096,
+    "max_retained_per_layer": 36,
+    "max_transfer": 4,
+    "min_retained_per_layer": 28,
+    "mutation_cap": 3,
+    "population_size": 32,
+    "seed": 6709,
+    "total_retained": 864
+  },
+  "shape": [
+    27,
+    64
+  ],
+  "source_protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0"
+}

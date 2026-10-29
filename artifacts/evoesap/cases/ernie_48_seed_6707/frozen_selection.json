@@ -1,0 +1,137 @@
+{
+  "frozen_at": "2026-10-28T14:30:36+00:00",
+  "holdout_candidates": [
+    {
+      "candidate_id": 252,
+      "esap": 0.6688104351544149,
+      "mask_sha256": "490ddceb518240fd943045e8dc31de30299ee9dbbd2acf1c32e37b116a2dfc58"
+    },
+    {
+      "candidate_id": 239,
+      "esap": 0.667543440080316,
+      "mask_sha256": "4ac91313256891491474981fc0a0736850c0676f8511f530bc12fe7550bbf067"
+    },
+    {
+      "candidate_id": 223,
+      "esap": 0.668736172470291,
+      "mask_sha256": "16952574aa89ae0f83c65dabdc19dd3a6a631186fac6fa8262d13ca44f10abcb"
+    },
+    {
+      "candidate_id": 251,
+      "esap": 0.6705419222322939,
+      "mask_sha256": "a80957a47b4ab962650a8b2304f5f89e349257e253335fa5b69a7cd86d2fc875"
+    },
+    {
+      "candidate_id": 194,
+      "esap": 0.6686090570821894,
+      "mask_sha256": "0fb038d2b9c382911383c3e7f64b25fa22ac0aca64a8788dc9bd2a5e58ca26cb"
+    },
+    {
+      "candidate_id": 240,
+      "esap": 0.667950658713759,
+      "mask_sha256": "cf7f211279b0f75a9dae33ea8a378dcc5e0bb09749ce92be030d8e2dc2a346fd"
+    },
+    {
+      "candidate_id": 206,
+      "esap": 0.6680982957163849,
+      "mask_sha256": "c3aa037261486929108d020186785528684cc35444afb86c8490de2ef97080af"
+    },
+    {
+      "candidate_id": 222,
+      "esap": 0.6687094788843352,
+      "mask_sha256": "c5681b8725203bf01b0222c0d2c2829b9f62da62cff0aec207eef82794aa7bfc"
+    },
+    {
+      "candidate_id": 241,
+      "esap": 0.6685499729459382,
+      "mask_sha256": "25dfdfc4ef6588e1bd06361eca3dccd6ab8e5f983cdebde3d977c4308aa6722c"
+    },
+    {
+      "candidate_id": 213,
+      "esap": 0.6655054929102271,
+      "mask_sha256": "e79a9fdba7e1cc04d570590b4196a718e7c88f6de7910759ee36850c0e124c83"
+    },
+    {
+      "candidate_id": 237,
+      "esap": 0.6674975686094291,
+      "mask_sha256": "a532a3345f9b4705fc2ddbce4e454a6a8bba48309e6052bb6ac0cb69c38c8731"
+    },
+    {
+      "candidate_id": 199,
+      "esap": 0.6659377908448243,
+      "mask_sha256": "665ba5652991f3601126621f6f9ee864c7a111aef156de2b4a848bd4a8045c05"
+    },
+    {
+      "candidate_id": 249,
+      "esap": 0.6678626079102266,
+      "mask_sha256": "b5a248a0f095e41bc232515ab4c5eff56f940129e03f0c5d534a9728a8aed3d3"
+    },
+    {
+      "candidate_id": 247,
+      "esap": 0.6670429337574202,
+      "mask_sha256": "fc3d4cc13dc3d91aa377aaa7754b1e9bf5059d7522cc312c317bb7436b35371c"
+    },
+    {
+      "candidate_id": 202,
+      "esap": 0.66910389029581,
+      "mask_sha256": "652d097048b04088bb049a9bd312f83594e04d32ab921bbfb67e5669392ce1a7"
+    },
+    {
+      "candidate_id": 253,
+      "esap": 0.6684624852718146,
+      "mask_sha256": "5c61c92c964729c08d4fe81d014fbd4a769f88ba67c26437d12f2b7545db0bba"
+    },
+    {
+      "candidate_id": 248,
+      "esap": 0.6678715310766365,
+      "mask_sha256": "8902dad8659a9b5f556f2515eebb6704ddf7e1691aaecace8b5eb7226940de2e"
+    },
+    {
+      "candidate_id": 165,
+      "esap": 0.6663433784656412,
+      "mask_sha256": "33154b5624c36372b9bca592a720eb5c912171772aa21669293cca912e74a6c9"
+    },
+    {
+      "candidate_id": 187,
+      "esap": 0.6665802525311602,
+      "mask_sha256": "d211b39507694dbccbf698adb17783897d8d969311a48947cbe278d52a4219ec"
+    },
+    {
+      "candidate_id": 172,
+      "esap": 0.6670262945750297,
+      "mask_sha256": "af1045a63cb54a69febc09bb8dd0467cf8e8ec66d58b5513beac4673773e5bb4"
+    },
+    {
+      "candidate_id": 211,
+      "esap": 0.6677286175629804,
+      "mask_sha256": "c8c60268efb1d3e1a45a3eb9f0db8b0f94f0f2a18b604e64355edbb158e5cf71"
+    },
+    {
+      "candidate_id": 233,
+      "esap": 0.6669942578867739,
+      "mask_sha256": "dd9988d56111a28a808ea24ce664be9c94160b5eb947f2b5a91490c8cad2da8f"
+    },
+    {
+      "candidate_id": 92,
+      "esap": 0.6670165898969516,
+      "mask_sha256": "9d2b9ec384e499726b12b072dae625b00624736dc35a5550b36fe77dda28b02c"
+    },
+    {
+      "candidate_id": 0,
+      "esap": 0.6500832638328751,
+      "mask_sha256": "59030b85afa02fa46fc5bbb3ccd365ddfc4ca877430679310675f5db24a87b64"
+    }
+  ],
+  "mask_sha256": "a80957a47b4ab962650a8b2304f5f89e349257e253335fa5b69a7cd86d2fc875",
+  "method": "evoesap_budget_matched",
+  "protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0",
+  "search_seed": 6707,
+  "selection_rule": "maximum disjoint train-holdout full-vocabulary ESAP",
+  "selection_split": "train-holdout",
+  "selection_uses_test": false,
+  "winner": {
+    "candidate_id": 251,
+    "esap": 0.6705419222322939,
+    "mask_sha256": "a80957a47b4ab962650a8b2304f5f89e349257e253335fa5b69a7cd86d2fc875"
+  }
+}

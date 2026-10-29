@@ -54,7 +54,6 @@ def create_package(output_dir: Path, artifacts: list[Path]) -> Path:
         (
             PROJECT_ROOT / "scripts/generate_paper_figures.py",
             PROJECT_ROOT / "requirements-figures.txt",
-            PROJECT_ROOT / "docs/FIGURE_DESIGN_PLAN.md",
             PROJECT_ROOT / EXPERT_CSV,
         )
     )

@@ -1,0 +1,127 @@
+{
+  "cost": {
+    "gpu_seconds": 80.376390625,
+    "peak_device_memory_bytes": 3646223360,
+    "sample_counts": {
+      "arc_easy": {
+        "effective": 2376,
+        "expected": 2376,
+        "original": 2376
+      },
+      "openbookqa": {
+        "effective": 500,
+        "expected": 500,
+        "original": 500
+      }
+    },
+    "wall_seconds": 80.38005550950766
+  },
+  "dataset_evidence": {
+    "arc_easy": {
+      "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+      "content_sha256": "9127ee84abc81bff15a395dbf7766093e2f12a6c2babaff9695dc5893d9051eb",
+      "dataset_name": "ARC-Easy",
+      "dataset_path": "allenai/ai2_arc",
+      "evaluation_split": "test",
+      "feature_schema_sha256": "0592f401b1c3c46b07f67d8e5895812e149184cb5a603092f4e3c623997a0686",
+      "first_row_sha256": "66c4ca2da9f2cf7802666ff679e4e83aee7254d2c911063d82b146a572250983",
+      "hub_repository": "allenai/ai2_arc",
+      "huggingface_fingerprint": "b019ca21ba59e1f3",
+      "last_row_sha256": "026d6cdd7222053841fdc8340630b1c4f8380f66a41d7f181df9537538fcad54",
+      "lm_eval_task": "arc_easy",
+      "num_rows": 2376,
+      "output_type": "multiple_choice",
+      "revision": "210d026faf9955653af8916fad021475a3f00453"
+    },
+    "openbookqa": {
+      "content_hash_spec": "sha256(index<TAB>canonical-json<LF>)",
+      "content_sha256": "1dbe75bcbf687cc1ead15e66a9504626e0c6446b34f03f0f6a92b4bc14af4400",
+      "dataset_name": "main",
+      "dataset_path": "openbookqa",
+      "evaluation_split": "test",
+      "feature_schema_sha256": "91e508a44f9d4435f2a1343cb4157b7ca418aee03a1d3a2c2e976c407269a0c0",
+      "first_row_sha256": "691b6b5eab5f50ce0c4169fc6d8ee7ec0caa639a72b813a6ebec8b94f3e30db2",
+      "hub_repository": "allenai/openbookqa",
+      "huggingface_fingerprint": "f412d851e9522d86",
+      "last_row_sha256": "62711f890db747b045b35a37e1298046e631bac6f3a411e8137f97feca6f47d8",
+      "lm_eval_task": "openbookqa",
+      "num_rows": 500,
+      "output_type": "multiple_choice",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+    }
+  },
+  "evaluation_protocol_id": "formal_main_arc_obqa_v1",
+  "freeze_sha256": "81d3c3ea28fc66a9cd0855eb74a07547206357c4689f6fb2a38bd0a2719ab018",
+  "hardware": {
+    "cublas_workspace_config": {
+      "configured_now": false,
+      "cuda_initialized_at_check": true,
+      "valid": true,
+      "value": ":4096:8",
+      "verified_before_cuda_initialization_in_process": false
+    },
+    "cuda_available": true,
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true,
+    "devices": [
+      {
+        "compute_capability": [
+          8,
+          0
+        ],
+        "index": 0,
+        "name": "NVIDIA A100-SXM4-80GB",
+        "total_memory_bytes": 84974239744
+      }
+    ],
+    "driver_version": [
+      "550.144.03"
+    ]
+  },
+  "is_synthetic": false,
+  "limit": null,
+  "mask_sha256": "26b7827ec22c159553ff56b9fd23c1bbed7ec2a9ceb869817a8346fd570816bc",
+  "method": "evoesap_budget_matched",
+  "metric_selection": "Report scores use tasks[*].acc_norm; source acc metadata is retained separately.",
+  "num_fewshot": 0,
+  "packages": {
+    "accelerate": "1.1.1",
+    "datasets": "3.1.0",
+    "lm_eval": "0.4.8",
+    "networkx": "3.4.2",
+    "numpy": "1.26.4",
+    "safetensors": "0.4.5",
+    "torch": "2.5.1",
+    "transformers": "4.46.3",
+    "yaml": "6.0.2"
+  },
+  "primary_metric": "acc_norm",
+  "protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0",
+  "schema_version": "released-evoesap-evaluation-v1",
+  "scores": {
+    "mean": 0.3109781144781145,
+    "tasks": {
+      "arc_easy": 0.35395622895622897,
+      "openbookqa": 0.268
+    }
+  },
+  "seed": 6707,
+  "selection_uses_test": false,
+  "source": "results/runs/strong_baselines_20261028/granite_16/evoesap/seed_6708/test.json",
+  "source_primary_metric": "acc",
+  "source_schema_version": "downstream-evaluation-v1",
+  "source_sha256": "aac510f91ea297983c9d4541235183f23de53af45ed0eb6446c76d1abe75f8d8",
+  "tasks": {
+    "arc_easy": {
+      "acc": 0.3771043771043771,
+      "acc_norm": 0.35395622895622897
+    },
+    "openbookqa": {
+      "acc": 0.14,
+      "acc_norm": 0.268
+    }
+  }
+}

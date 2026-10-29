@@ -56,6 +56,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 295.6287594512105,
       "search_recorded_wall_seconds": 295.6287594512105,
       "search_timing_kind": "fresh_candidate_inference",
       "source_run": "results/runs/uniform_tape_20261023",
@@ -119,6 +121,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 232.61454468593,
       "search_recorded_wall_seconds": 232.61454468593,
       "search_timing_kind": "external_score_reuse",
       "source_run": "results/runs/granite50_rerun_20261025",
@@ -182,13 +186,42 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "mean_of_two_valid_timed_repeats",
+      "reported_search_wall_seconds": 6130.129744503647,
       "search_recorded_wall_seconds": 2.1080635748803616,
       "search_timing_kind": "cached_resume_replay",
       "source_run": "results/runs/uniform_tape_20261023",
       "test_gpu_seconds": 282.89659375,
       "test_peak_device_memory_bytes": 46187218432,
       "test_reused": false,
-      "test_wall_seconds": 282.9006918743253
+      "test_wall_seconds": 282.9006918743253,
+      "timed_repeats": {
+        "aggregation": "arithmetic mean of two valid timed ERNIE 75% runs",
+        "n": 2,
+        "runs": [
+          {
+            "evidence": {
+              "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/state.json": "4b5dc8f1c074fae07f5944289e5b8116a8167eed3e43263e82a6b2f8ccedc76f",
+              "results/runs/tape_multiseed_20261025/seed_6708/ernie_48/uniform_norm/search.json": "b9dee775fb922bdfb3e86824507b3a422853cf48bfce792c76849f97147151d4",
+              "results/runs/tape_multiseed_20261025/seed_6708/protocol.json": "90f547a388a46e5d042f6e1cdf3de8737a980fb5c81299adc4c43b35e26fa45f"
+            },
+            "external_score_records_reused": 10,
+            "seed": 6708,
+            "wall_seconds": 6199.25109802559
+          },
+          {
+            "evidence": {
+              "results/runs/tape_multiseed_20261025/seed_6709/ernie_48/state.json": "d2dfeaa64327ed15391bad1cf6ceac4f8797b2010ca8fe5467f2a5a62374d5ca",
+              "results/runs/tape_multiseed_20261025/seed_6709/ernie_48/uniform_norm/search.json": "62bcdcb8cd1297d64523088509179d7fd6460b25013ab556c5dc42de993678e0",
+              "results/runs/tape_multiseed_20261025/seed_6709/protocol.json": "c3209ced660dd226a3e61268069d609708b56f4019039a58078c7fa389fa803a"
+            },
+            "external_score_records_reused": 10,
+            "seed": 6709,
+            "wall_seconds": 6061.008390981704
+          }
+        ],
+        "wall_seconds": 6130.129744503647
+      }
     },
     {
       "candidate_count": 256,
@@ -245,6 +278,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 4500.421510528773,
       "search_recorded_wall_seconds": 4500.421510528773,
       "search_timing_kind": "fresh_candidate_inference",
       "source_run": "results/runs/uniform_tape_20261023",
@@ -308,6 +343,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 6355.896702390164,
       "search_recorded_wall_seconds": 6355.896702390164,
       "search_timing_kind": "fresh_candidate_inference",
       "source_run": "results/runs/uniform_tape_20261023",
@@ -371,6 +408,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 6204.0051653161645,
       "search_recorded_wall_seconds": 6204.0051653161645,
       "search_timing_kind": "fresh_candidate_inference",
       "source_run": "results/runs/uniform_tape_20261023",
@@ -434,6 +473,8 @@
         "yaml": "6.0.2"
       },
       "python": "3.10.21",
+      "reported_search_source": "reference_run",
+      "reported_search_wall_seconds": 242.51325649768114,
       "search_recorded_wall_seconds": 242.51325649768114,
       "search_timing_kind": "fresh_candidate_inference",
       "source_run": "results/runs/uniform_tape_20261023",

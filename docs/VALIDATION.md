@@ -1,38 +1,30 @@
 # Release validation
 
-## October 2026 multi-seed update
+The current release packages 15 TAPE searches and 12 EvoESAP searches, together with their completed full-test evaluations. Release validation uses CPU checks and saved records; it does not launch new GPU inference or search.
 
-The release contains 15 replayable searches: 13 main runs and two single-run search ablations. Validation uses CPU checks and saved experiment records; no model search or inference is run as part of this update.
+Validation completed on 29 October 2026: all 161 tests passed with PyTorch; the CPU-only environment passed 150 tests and skipped 11 PyTorch-dependent tests. CPU replay matched all 256 candidates and the training-selected winner in each of the 15 TAPE and 12 EvoESAP cases. Both figures and their distribution package regenerated successfully. An independently extracted ZIP installed as version 0.3.0, passed dependency checks and the CPU-only test suite, verified all artifact checksums, recomputed both statistical summaries, and regenerated the figures and their package. These checks use saved records; they are not new model-inference experiments.
 
 | Check | Scope |
 |---|---|
-| File integrity and feasibility | Verify every release checksum, exact global expert budgets, layer bounds, distinct candidates, and frozen output masks. |
-| CPU search replay | Recreate all 256 candidates and the training-selected output in each of the 15 cases using recorded training objectives. |
-| Statistical reconstruction | Recompute means and sample standard deviations from the 13 individual main-run test summaries; verify original, requested, and all-recorded seed groups. |
-| Unit tests | Test search operators, task objectives, pruning controllers, release verification, statistics, and replay. |
-| Portable figures | Generate both active figures from the released CSV without local experiment directories or model weights. |
-| Independent package | Extract the distribution ZIP and repeat integrity, test, and replay checks outside the checkout. |
-| Distribution hygiene | Check for credentials, private absolute paths, model weights, caches, oversized files, and non-English release text. |
+| Integrity and feasibility | Verify release checksums, global expert budgets, per-layer bounds, distinct candidates, and frozen winner masks. |
+| TAPE replay | Regenerate all 256 candidates and the training-selected winner for each of 15 cases from recorded task objectives. |
+| EvoESAP replay | Regenerate all 256 candidates and independent training-set selection for each of 12 cases from recorded full-vocabulary ESAP fitness. |
+| Statistics | Recompute means and sample standard deviations from per-run full-test scores, preserving the paper and additional Granite 50% seed cohorts. |
+| Tests | Exercise search operators, task objectives, ESAP, pruning controllers, verification, statistics, and portable runners. |
+| Figures and distribution | Rebuild the two figures from released inputs and scan the package for private paths, credentials, weights, caches, and non-English text. |
 
-Run these checks from the repository root:
+Run from the repository root after installing the development dependencies:
 
 ```bash
 python scripts/reproduce_tape.py check
+python scripts/reproduce_evoesap.py check
 python -m pytest
 python scripts/reproduce_tape.py replay --case all
+python scripts/reproduce_evoesap.py replay --case all
 python scripts/reproduce_tape.py statistics
+python scripts/reproduce_evoesap.py statistics
 ```
 
-The CPU-only dependency set skips seven controller tests that require PyTorch. An environment with PyTorch runs those tests as well. CPU replay verifies the recorded search logic and selection; it does not remeasure the test accuracies.
+Replay verifies search logic and training-only selection using saved fitness values. It does not load model weights or remeasure accuracy. Tests requiring PyTorch are skipped when PyTorch is absent; model-execution commands require the appropriate GPU environment from the [reproduction guide](REPRODUCIBILITY.md).
 
-Checks completed on 28 October 2026: all 89 tests passed with PyTorch; the CPU-only environment passed 82 tests and skipped the seven PyTorch-dependent tests. All 15 CPU replays matched the 256 saved candidates and final selections. Statistical reconstruction, checksum and feasibility checks, distribution scans, and both figure builds passed. An independently extracted ZIP installed successfully with no broken dependencies and repeated the CPU tests, all replays, integrity checks, and portable figure generation successfully. No GPU was used.
-
-The latest author-supplied report PDF is included unchanged. Its checksum and the distinction from the older manuscript source are documented in [report provenance](REPORT_PROVENANCE.md). The PDF was not newly compiled during packaging.
-
-## Earlier GPU validation: 25 October 2026
-
-The previous release was independently extracted, installed, and tested. It passed 77 tests with PyTorch, or 70 tests with seven skips in the CPU-only environment, and replayed all six cases available at that time.
-
-A separate full-test inference check of the Granite 50% seed-6708 mask covered all 2,376 ARC-Easy and 500 OpenBookQA questions. It reproduced 37.67% on ARC-Easy, 27.00% on OpenBookQA, and a 32.33% average. The expert-mask and test-data hashes matched. Evaluation used one A100 and took 80.60 seconds; this is not a search timing or a new search seed.
-
-The original local validation artifact has SHA-256 `ca0559ad5bd0198034a235a311ff6dbc9fc58feefb39dd8a951cf083dc159a64`. Raw test text and large evaluation outputs are excluded from this repository. The earlier GPU check is not presented as a GPU rerun of the current multi-seed update.
+The latest supplied PDF is included unchanged, not recompiled during packaging. Its checksum and the remaining differences between its wording and the recorded experiments are documented in [report provenance](REPORT_PROVENANCE.md).

@@ -18,6 +18,8 @@ ARC-Easy and OpenBookQA are downloaded through lm-evaluation-harness. Their orig
 
 The project uses NumPy, PyYAML, PyTorch, Transformers, Accelerate, Hugging Face Datasets and lm-evaluation-harness under their respective licenses. No installed dependencies or model weight caches are vendored.
 
-## Report template
+## EvoESAP
 
-The report source references the NeurIPS 2026 style file. Obtain it from the official template location listed in the `.tex` header; the style file is not included here.
+`src/dsai6707/evoesap.py` and `src/dsai6707/esap.py` independently implement the allocation-search operators and full-vocabulary Expected Speculative Acceptance Proxy described by Zongfang Liu, Shengkun Tang, Boyang Sun, Zhiqiang Shen, and Xin Yuan in [EvoESAP: Non-Uniform Expert Pruning for Sparse MoE](https://arxiv.org/abs/2603.06003). The [official implementation](https://github.com/ZongfangLiu/EvoESAP) was consulted. No upstream EvoESAP repository is vendored.
+
+The reported comparison uses the same expert budgets, per-layer bounds, task-training samples, and 256-candidate budget as the TAPE experiments, with independent training-set selection. These adaptations and the exact recorded settings are included in `artifacts/evoesap/protocol.json` and the [reproduction guide](docs/REPRODUCIBILITY.md).

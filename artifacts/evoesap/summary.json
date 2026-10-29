@@ -1,0 +1,285 @@
+{
+  "cases": {
+    "ernie_32": {
+      "family": "ernie",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 61.82659932659933,
+          "sample_std_percentage_points": 0.6954003216270325
+        },
+        "avg": {
+          "mean_percent": 48.146632996632995,
+          "sample_std_percentage_points": 0.5767549250596699
+        },
+        "openbookqa": {
+          "mean_percent": 34.46666666666667,
+          "sample_std_percentage_points": 0.9018499505645775
+        },
+        "performance_retained": {
+          "mean_percent": 77.38082031662198,
+          "sample_std_percentage_points": 0.9269551460823856
+        }
+      },
+      "n": 3,
+      "retained_percent": 50.0,
+      "runs": [
+        {
+          "case_id": "ernie_32_seed_6707",
+          "mask_sha256": "2d167a1e69129f7f0594c4adef9ff2bfcd1ce7049917696c90c7a47f6c761ff1",
+          "scores": {
+            "mean": 0.48444949494949496,
+            "tasks": {
+              "arc_easy": 0.61489898989899,
+              "openbookqa": 0.354
+            }
+          },
+          "seed": 6707,
+          "source_evaluation_sha256": "9823e74837998b909c06bbbdca54cc26bef871ec8c85508a75310d15dccb5616"
+        },
+        {
+          "case_id": "ernie_32_seed_6708",
+          "mask_sha256": "7320126b4a23b8100b8f999955933f2c097da37540ecd3a46ddf8416e20ddfe1",
+          "scores": {
+            "mean": 0.4748181818181818,
+            "tasks": {
+              "arc_easy": 0.6136363636363636,
+              "openbookqa": 0.336
+            }
+          },
+          "seed": 6708,
+          "source_evaluation_sha256": "ccb1933dd2d626e62bb6d46d62edd774e823bb51c215a65a452eda4ff53a8f52"
+        },
+        {
+          "case_id": "ernie_32_seed_6709",
+          "mask_sha256": "f9fbb7438c0d20d5a0e9d7b8bdb0e171943d2fda3bf91d05a38d58514dea5ac0",
+          "scores": {
+            "mean": 0.48513131313131314,
+            "tasks": {
+              "arc_easy": 0.6262626262626263,
+              "openbookqa": 0.344
+            }
+          },
+          "seed": 6709,
+          "source_evaluation_sha256": "7bff9ebdbfdb3610d6fad02c0201b6d70475fa8447cec20330db9ce77bf4f916"
+        }
+      ],
+      "seeds": [
+        6707,
+        6708,
+        6709
+      ]
+    },
+    "ernie_48": {
+      "family": "ernie",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 76.92199775533109,
+          "sample_std_percentage_points": 0.794477841457227
+        },
+        "avg": {
+          "mean_percent": 59.527665544332216,
+          "sample_std_percentage_points": 0.32679392712198796
+        },
+        "openbookqa": {
+          "mean_percent": 42.13333333333333,
+          "sample_std_percentage_points": 0.5033222956847163
+        },
+        "performance_retained": {
+          "mean_percent": 95.67230987213725,
+          "sample_std_percentage_points": 0.5252201572840698
+        }
+      },
+      "n": 3,
+      "retained_percent": 75.0,
+      "runs": [
+        {
+          "case_id": "ernie_48_seed_6707",
+          "mask_sha256": "a80957a47b4ab962650a8b2304f5f89e349257e253335fa5b69a7cd86d2fc875",
+          "scores": {
+            "mean": 0.599047138047138,
+            "tasks": {
+              "arc_easy": 0.7760942760942761,
+              "openbookqa": 0.422
+            }
+          },
+          "seed": 6707,
+          "source_evaluation_sha256": "d7926de33467f20944371827de2f054ac89d49c64a58eb6717f53ff088c935f2"
+        },
+        {
+          "case_id": "ernie_48_seed_6708",
+          "mask_sha256": "8968a07d7b919b85569fe1a6082a6021785cc57826e359d2ac4d2dc13ff89dbf",
+          "scores": {
+            "mean": 0.5932609427609428,
+            "tasks": {
+              "arc_easy": 0.7605218855218855,
+              "openbookqa": 0.426
+            }
+          },
+          "seed": 6708,
+          "source_evaluation_sha256": "e55a0b73e048ad6dbd4bd5bdf20b6aa90354ed165ee90d8f7077810bd50fa76a"
+        },
+        {
+          "case_id": "ernie_48_seed_6709",
+          "mask_sha256": "73098add1c4ca5bbcfbafe2bee54de1a7f75c66c7a3147c35b30cc5825a7c4b8",
+          "scores": {
+            "mean": 0.5935218855218856,
+            "tasks": {
+              "arc_easy": 0.7710437710437711,
+              "openbookqa": 0.416
+            }
+          },
+          "seed": 6709,
+          "source_evaluation_sha256": "2095fb517880f623910f4b878864a10f47a3d61fa99db77fe8292707df636a56"
+        }
+      ],
+      "seeds": [
+        6707,
+        6708,
+        6709
+      ]
+    },
+    "granite_16": {
+      "family": "granite",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 36.15319865319866,
+          "sample_std_percentage_points": 0.6773348880231913
+        },
+        "avg": {
+          "mean_percent": 31.67659932659933,
+          "sample_std_percentage_points": 0.576196177477553
+        },
+        "openbookqa": {
+          "mean_percent": 27.200000000000003,
+          "sample_std_percentage_points": 0.5291502622129203
+        },
+        "performance_retained": {
+          "mean_percent": 59.997767928318616,
+          "sample_std_percentage_points": 1.0913571933983794
+        }
+      },
+      "n": 3,
+      "retained_percent": 50.0,
+      "runs": [
+        {
+          "case_id": "granite_16_seed_6707",
+          "mask_sha256": "0e7a2d5a32383a22c5e449368d1a35024de7b8c2d9d44e0d251d7a529f45a503",
+          "scores": {
+            "mean": 0.3225016835016835,
+            "tasks": {
+              "arc_easy": 0.367003367003367,
+              "openbookqa": 0.278
+            }
+          },
+          "seed": 6707,
+          "source_evaluation_sha256": "7c75089f90d9c19d4fc99bb2e0ed0e235e8a1e40315e57390debe8a4fc69b719"
+        },
+        {
+          "case_id": "granite_16_seed_6708",
+          "mask_sha256": "26b7827ec22c159553ff56b9fd23c1bbed7ec2a9ceb869817a8346fd570816bc",
+          "scores": {
+            "mean": 0.3109781144781145,
+            "tasks": {
+              "arc_easy": 0.35395622895622897,
+              "openbookqa": 0.268
+            }
+          },
+          "seed": 6708,
+          "source_evaluation_sha256": "aac510f91ea297983c9d4541235183f23de53af45ed0eb6446c76d1abe75f8d8"
+        },
+        {
+          "case_id": "granite_16_seed_6709",
+          "mask_sha256": "b0bcbb4ce2251a6e5f6192ffbebf7ae2269a2360212c22ce1cd3888a71d58ae8",
+          "scores": {
+            "mean": 0.31681818181818183,
+            "tasks": {
+              "arc_easy": 0.36363636363636365,
+              "openbookqa": 0.27
+            }
+          },
+          "seed": 6709,
+          "source_evaluation_sha256": "a4f484f9871a1e59650e910e80063d3e32c237b215a0d696263c6b36b9fbf7fe"
+        }
+      ],
+      "seeds": [
+        6707,
+        6708,
+        6709
+      ]
+    },
+    "granite_24": {
+      "family": "granite",
+      "metrics": {
+        "arc_easy": {
+          "mean_percent": 52.539281705948376,
+          "sample_std_percentage_points": 0.3818927494056168
+        },
+        "avg": {
+          "mean_percent": 42.16964085297419,
+          "sample_std_percentage_points": 0.27366925557411376
+        },
+        "openbookqa": {
+          "mean_percent": 31.8,
+          "sample_std_percentage_points": 0.5291502622129176
+        },
+        "performance_retained": {
+          "mean_percent": 79.87234675765016,
+          "sample_std_percentage_points": 0.5183493441249447
+        }
+      },
+      "n": 3,
+      "retained_percent": 75.0,
+      "runs": [
+        {
+          "case_id": "granite_24_seed_6707",
+          "mask_sha256": "5b80913c3caddff328cf797a0224c49b09e8aec49219038f46c668671e89b4a0",
+          "scores": {
+            "mean": 0.41894276094276095,
+            "tasks": {
+              "arc_easy": 0.5218855218855218,
+              "openbookqa": 0.316
+            }
+          },
+          "seed": 6707,
+          "source_evaluation_sha256": "b3879d78d70a43352c2e4abc3a444ba70f362e98ba1ac1676a3fa69bb9cbbc9a"
+        },
+        {
+          "case_id": "granite_24_seed_6708",
+          "mask_sha256": "0262f1aa022197dc4982da9feecd3e4da97539c339a3d87ccb518859efb70cc6",
+          "scores": {
+            "mean": 0.42441582491582497,
+            "tasks": {
+              "arc_easy": 0.5248316498316499,
+              "openbookqa": 0.324
+            }
+          },
+          "seed": 6708,
+          "source_evaluation_sha256": "3310085eae3d54b259b355120ee8df016704dfe0378085bbba025b54147a84a5"
+        },
+        {
+          "case_id": "granite_24_seed_6709",
+          "mask_sha256": "1b2202bd3861bc250d58e8321b9b9f04c1d6a8f933ffcc5f82ab8dad8532c455",
+          "scores": {
+            "mean": 0.42173063973063973,
+            "tasks": {
+              "arc_easy": 0.5294612794612794,
+              "openbookqa": 0.314
+            }
+          },
+          "seed": 6709,
+          "source_evaluation_sha256": "16bcf0700ff18043c316b54e2058eb2187eff118396cdd1d980753aca39fcc59"
+        }
+      ],
+      "seeds": [
+        6707,
+        6708,
+        6709
+      ]
+    }
+  },
+  "method": "EvoESAP + immutable REAP ranking, budget-matched adaptation",
+  "metric": "lm-evaluation-harness acc_norm, zero-shot, full test",
+  "schema_version": "released-evoesap-statistics-v1",
+  "std_definition": "sample standard deviation across three search seeds (ddof=1)",
+  "units": "mean_percent and sample_std_percentage_points"
+}

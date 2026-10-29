@@ -1,8 +1,8 @@
 # Main results
 
-Scores use `acc_norm` on the complete official test splits: 2,376 ARC-Easy questions and 500 OpenBookQA questions. Avg is the equal-weight mean of the two task accuracies in each run. TAPE entries report the mean ± sample standard deviation across three independent search seeds; SD is in percentage points, not a confidence interval. Baselines are fixed expert sets evaluated once, not three-seed averages.
+Scores use `acc_norm` on the complete official test splits: 2,376 ARC-Easy questions and 500 OpenBookQA questions. Avg is the equal-weight mean of the two task accuracies in each run. TAPE and EvoESAP report the mean ± sample standard deviation across three independent search seeds; SD is in percentage points. Direct-scoring baselines are fixed expert sets evaluated once.
 
-ERNIE 75%, ERNIE 50%, and Granite 75% use search seeds 6707-6709. Granite 50% uses the latest requested summary, seeds 6708-6710. Seed 6710 was added after viewing the original results, so this is not presented as a preplanned replacement cohort. All four Granite 50% runs, the original cohort, and the all-four summary remain below and in `artifacts/multiseed_summary.json`.
+The main tables follow Tables 2-3 of the latest report: seeds 6707-6709 for both methods at all four settings. The separately requested Granite 50% TAPE subset (6708-6710) and all four recorded runs remain below and in `artifacts/multiseed_summary.json`; its existing reported_seeds field retains that requested subset rather than silently changing the historical metadata. Granite 50% ARC SD is 0.77 when rounded from the recorded scores; the PDF prints 0.76. See [report provenance](REPORT_PROVENANCE.md).
 
 ## ERNIE
 
@@ -13,11 +13,13 @@ ERNIE 75%, ERNIE 50%, and Granite 75% use search seeds 6707-6709. Granite 50% us
 | 75% | Frequency | 1 | 71.38 | 37.20 | 54.29 | 87.25 |
 | 75% | EAN-Mean | 1 | 74.07 | 42.20 | 58.14 | 93.44 |
 | 75% | REAP+Frequency | 1 | 73.23 | 38.40 | 55.82 | 89.71 |
+| 75% | EvoESAP | 3 | 76.92 ± 0.79 | 42.13 ± 0.50 | 59.53 ± 0.33 | 95.67 ± 0.53 |
 | 75% | TAPE | 3 | 80.86 ± 0.28 | 43.67 ± 0.70 | 62.27 ± 0.35 | 100.07 ± 0.56 |
 | 50% | REAP | 1 | 63.34 | 34.20 | 48.77 | 78.38 |
 | 50% | Frequency | 1 | 59.30 | 29.20 | 44.25 | 71.12 |
 | 50% | EAN-Mean | 1 | 67.42 | 32.60 | 50.01 | 80.38 |
 | 50% | REAP+Frequency | 1 | 61.95 | 34.00 | 47.98 | 77.11 |
+| 50% | EvoESAP | 3 | 61.83 ± 0.70 | 34.47 ± 0.90 | 48.15 ± 0.58 | 77.38 ± 0.93 |
 | 50% | TAPE | 3 | 68.76 ± 0.89 | 33.60 ± 0.72 | 51.18 ± 0.77 | 82.25 ± 1.24 |
 
 ## GRANITE
@@ -28,17 +30,19 @@ ERNIE 75%, ERNIE 50%, and Granite 75% use search seeds 6707-6709. Granite 50% us
 | 75% | REAP | 1 | 46.89 | 30.60 | 38.74 | 73.38 |
 | 75% | Frequency | 1 | 52.69 | 30.40 | 41.55 | 78.69 |
 | 75% | REAP+Frequency | 1 | 53.45 | 32.80 | 43.13 | 81.68 |
+| 75% | EvoESAP | 3 | 52.54 ± 0.38 | 31.80 ± 0.53 | 42.17 ± 0.27 | 79.87 ± 0.52 |
 | 75% | TAPE | 3 | 54.83 ± 0.69 | 33.47 ± 0.90 | 44.15 ± 0.38 | 83.62 ± 0.72 |
 | 50% | REAP | 1 | 33.46 | 26.80 | 30.13 | 57.07 |
 | 50% | Frequency | 1 | 28.49 | 29.00 | 28.75 | 54.45 |
 | 50% | REAP+Frequency | 1 | 35.90 | 28.00 | 31.95 | 60.52 |
-| 50% | TAPE | 3 | 37.74 ± 0.06 | 26.73 ± 0.64 | 32.24 ± 0.32 | 61.06 ± 0.61 |
+| 50% | EvoESAP | 3 | 36.15 ± 0.68 | 27.20 ± 0.53 | 31.68 ± 0.58 | 60.00 ± 1.09 |
+| 50% | TAPE | 3 | 37.29 ± 0.77 | 27.07 ± 0.12 | 32.18 ± 0.42 | 60.95 ± 0.79 |
 
 ## Individual main-experiment search seeds
 
 Each row is a separately recorded search and its training-selected expert set's full-test evaluation. Unchanged data samples, baseline anchors, candidate budget, and training-only selection are shared across seeds. Initialization uses REAP, Frequency, REAP+Frequency, a historical feasible TAPE expert set, and local perturbations; it is not REAP-only initialization.
 
-| Model | Expert retention | Search seed | Portable case ID | ARC-Easy (%) | OpenBookQA (%) | Avg (%) | Performance retained (%) | In latest summary |
+| Model | Expert retention | Search seed | Portable case ID | ARC-Easy (%) | OpenBookQA (%) | Avg (%) | Performance retained (%) | In paper cohort |
 |---|---:|---:|---|---:|---:|---:|---:|---|
 | ERNIE | 75% | 6707 | `ernie_48` | 80.93 | 44.40 | 62.67 | 100.72 | Yes |
 | ERNIE | 75% | 6708 | `ernie_48_seed_6708` | 81.10 | 43.00 | 62.05 | 99.73 | Yes |
@@ -49,10 +53,10 @@ Each row is a separately recorded search and its training-selected expert set's 
 | GRANITE | 75% | 6707 | `granite_24` | 54.12 | 34.40 | 44.26 | 83.84 | Yes |
 | GRANITE | 75% | 6708 | `granite_24_seed_6708` | 55.51 | 33.40 | 44.46 | 84.20 | Yes |
 | GRANITE | 75% | 6709 | `granite_24_seed_6709` | 54.84 | 32.60 | 43.72 | 82.81 | Yes |
-| GRANITE | 50% | 6707 | `granite_16_seed_6707` | 36.41 | 27.00 | 31.70 | 60.05 | No; preserved history |
+| GRANITE | 50% | 6707 | `granite_16_seed_6707` | 36.41 | 27.00 | 31.70 | 60.05 | Yes |
 | GRANITE | 50% | 6708 | `granite_16` | 37.67 | 27.00 | 32.33 | 61.24 | Yes |
 | GRANITE | 50% | 6709 | `granite_16_seed_6709` | 37.79 | 27.20 | 32.50 | 61.55 | Yes |
-| GRANITE | 50% | 6710 | `granite_16_seed_6710` | 37.75 | 26.00 | 31.88 | 60.38 | Yes |
+| GRANITE | 50% | 6710 | `granite_16_seed_6710` | 37.75 | 26.00 | 31.88 | 60.38 | No; supplementary run |
 
 ## Granite 50%: complete reporting history
 
@@ -75,3 +79,22 @@ All rows in this diagnostic table use one search seed (6707), not three-seed mea
 | w/o Identity Search | 76.43 | 40.40 | 58.42 |
 | w/o Evolved Identities | 76.14 | 40.00 | 58.07 |
 | TAPE (0 generations) | 80.60 | 41.60 | 61.10 |
+
+## Individual EvoESAP search seeds
+
+This is the budget-matched fixed-REAP-ranking baseline, using full-vocabulary teacher-forced ESAP. Each run uses 256 candidates and independent train-holdout selection. Original-operator details and adaptations are recorded in `artifacts/evoesap/protocol.json`. No test scores select candidates or seeds.
+
+| Setting | Search seed | Portable case ID | ARC-Easy (%) | OpenBookQA (%) | Avg (%) |
+|---|---:|---|---:|---:|---:|
+| ernie_48 | 6707 | `ernie_48_seed_6707` | 77.61 | 42.20 | 59.90 |
+| ernie_48 | 6708 | `ernie_48_seed_6708` | 76.05 | 42.60 | 59.33 |
+| ernie_48 | 6709 | `ernie_48_seed_6709` | 77.10 | 41.60 | 59.35 |
+| ernie_32 | 6707 | `ernie_32_seed_6707` | 61.49 | 35.40 | 48.44 |
+| ernie_32 | 6708 | `ernie_32_seed_6708` | 61.36 | 33.60 | 47.48 |
+| ernie_32 | 6709 | `ernie_32_seed_6709` | 62.63 | 34.40 | 48.51 |
+| granite_24 | 6707 | `granite_24_seed_6707` | 52.19 | 31.60 | 41.89 |
+| granite_24 | 6708 | `granite_24_seed_6708` | 52.48 | 32.40 | 42.44 |
+| granite_24 | 6709 | `granite_24_seed_6709` | 52.95 | 31.40 | 42.17 |
+| granite_16 | 6707 | `granite_16_seed_6707` | 36.70 | 27.80 | 32.25 |
+| granite_16 | 6708 | `granite_16_seed_6708` | 35.40 | 26.80 | 31.10 |
+| granite_16 | 6709 | `granite_16_seed_6709` | 36.36 | 27.00 | 31.68 |

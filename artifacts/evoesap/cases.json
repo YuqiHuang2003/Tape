@@ -1,0 +1,77 @@
+{
+  "cases": {
+    "ernie_32_seed_6707": {
+      "config": "cases/ernie_32_seed_6707/config.json",
+      "evaluation": "cases/ernie_32_seed_6707/evaluation.json",
+      "reference_case": "ernie_32",
+      "seed": 6707
+    },
+    "ernie_32_seed_6708": {
+      "config": "cases/ernie_32_seed_6708/config.json",
+      "evaluation": "cases/ernie_32_seed_6708/evaluation.json",
+      "reference_case": "ernie_32",
+      "seed": 6708
+    },
+    "ernie_32_seed_6709": {
+      "config": "cases/ernie_32_seed_6709/config.json",
+      "evaluation": "cases/ernie_32_seed_6709/evaluation.json",
+      "reference_case": "ernie_32",
+      "seed": 6709
+    },
+    "ernie_48_seed_6707": {
+      "config": "cases/ernie_48_seed_6707/config.json",
+      "evaluation": "cases/ernie_48_seed_6707/evaluation.json",
+      "reference_case": "ernie_48",
+      "seed": 6707
+    },
+    "ernie_48_seed_6708": {
+      "config": "cases/ernie_48_seed_6708/config.json",
+      "evaluation": "cases/ernie_48_seed_6708/evaluation.json",
+      "reference_case": "ernie_48",
+      "seed": 6708
+    },
+    "ernie_48_seed_6709": {
+      "config": "cases/ernie_48_seed_6709/config.json",
+      "evaluation": "cases/ernie_48_seed_6709/evaluation.json",
+      "reference_case": "ernie_48",
+      "seed": 6709
+    },
+    "granite_16_seed_6707": {
+      "config": "cases/granite_16_seed_6707/config.json",
+      "evaluation": "cases/granite_16_seed_6707/evaluation.json",
+      "reference_case": "granite_16",
+      "seed": 6707
+    },
+    "granite_16_seed_6708": {
+      "config": "cases/granite_16_seed_6708/config.json",
+      "evaluation": "cases/granite_16_seed_6708/evaluation.json",
+      "reference_case": "granite_16",
+      "seed": 6708
+    },
+    "granite_16_seed_6709": {
+      "config": "cases/granite_16_seed_6709/config.json",
+      "evaluation": "cases/granite_16_seed_6709/evaluation.json",
+      "reference_case": "granite_16",
+      "seed": 6709
+    },
+    "granite_24_seed_6707": {
+      "config": "cases/granite_24_seed_6707/config.json",
+      "evaluation": "cases/granite_24_seed_6707/evaluation.json",
+      "reference_case": "granite_24",
+      "seed": 6707
+    },
+    "granite_24_seed_6708": {
+      "config": "cases/granite_24_seed_6708/config.json",
+      "evaluation": "cases/granite_24_seed_6708/evaluation.json",
+      "reference_case": "granite_24",
+      "seed": 6708
+    },
+    "granite_24_seed_6709": {
+      "config": "cases/granite_24_seed_6709/config.json",
+      "evaluation": "cases/granite_24_seed_6709/evaluation.json",
+      "reference_case": "granite_24",
+      "seed": 6709
+    }
+  },
+  "schema_version": "released-evoesap-catalog-v1"
+}

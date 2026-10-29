@@ -52,4 +52,4 @@ python3.10 -m venv .venv-figures
 .venv-figures/bin/python scripts/generate_paper_figures.py --package
 ```
 
-The command loads no models and runs no experiments. See the [design specification](../FIGURE_DESIGN_PLAN.md) for the intended visual layout.
+The command loads no models and runs no experiments. The source table and the figure code above fully specify both visualizations.

@@ -1,0 +1,35 @@
+{
+  "family": "granite",
+  "reference_case": "granite_16",
+  "reference_inputs_sha256": {
+    "proxy_data.json": "2b3068e3edcd9dd971346d8101f302f88ae860d5f966a78ead8d969a5d2a60df",
+    "rankings.npy": "8c3393c9e9f0bbb615e3b2f0f5e41d6dcece137af2553c16db3f6f5b5e6a0309"
+  },
+  "retained_per_layer_reference": 16,
+  "schema_version": "released-evoesap-case-v1",
+  "search": {
+    "elite_size": 4,
+    "generations": 8,
+    "initial_patterns": [
+      "uniform",
+      "up",
+      "down",
+      "mid",
+      "mid-neg"
+    ],
+    "max_duplicate_attempts": 8192,
+    "max_mutation_attempts": 4096,
+    "max_retained_per_layer": 20,
+    "max_transfer": 4,
+    "min_retained_per_layer": 12,
+    "mutation_cap": 3,
+    "population_size": 32,
+    "seed": 6709,
+    "total_retained": 384
+  },
+  "shape": [
+    24,
+    32
+  ],
+  "source_protocol_sha256": "c743a71713f6a86ff49da8af5612ed8fd32defc03bb9eb9382b9ef6e16e2a8d0"
+}
