@@ -97,9 +97,9 @@ python scripts/reproduce_tape.py run --case ernie_48_allocation_only --model-pat
 
 Use a new output directory for each command. The runner recomputes candidate scores through model inference and does not read the released test scores. It selects the final expert set on the independent training subset and writes `frozen_selection.json` before opening test. Execution records separately report search, selection, total runtime, and process peak memory.
 
-## 5. EvoESAP baseline
+## 5. Supplementary EvoESAP experiments
 
-The release includes 12 completed EvoESAP runs: four model/budget settings, each with search seeds 6707, 6708, and 6709. They use the same pinned checkpoints, 64 search questions per task, 256 disjoint selection questions per task, exact expert budgets, and per-layer bounds as TAPE. The within-layer expert order is the unchanged REAP ranking used by the TAPE reference.
+The current report cites EvoESAP as related work but does not report its experimental scores. The release retains all 12 completed runs as supplementary experiments: four model/budget settings, each with search seeds 6707, 6708, and 6709. They use the same pinned checkpoints, 64 search questions per task, 256 disjoint selection questions per task, exact expert budgets, and per-layer bounds as TAPE. The within-layer expert order is the unchanged REAP ranking used by the TAPE reference.
 
 EvoESAP maximizes full-vocabulary Expected Speculative Acceptance Proxy (ESAP), `sum_v min(p_original(v), p_pruned(v))`, at teacher-forced gold-answer positions. Scores are averaged over answer positions and then questions, with temperature 1.0. This is not option-distribution KL or answer accuracy. It requires forward passes only; it does not decode text or train weights.
 
@@ -162,7 +162,7 @@ python scripts/reproduce_evoesap.py statistics
 
 `check` verifies released inputs and expert budgets. CPU replay regenerates every recorded candidate and verifies training-based selection for all 15 TAPE cases and 12 EvoESAP cases. It uses recorded training fitness and does not remeasure inference accuracy. The statistics commands aggregate the released full-test scores without rerunning search or inference.
 
-The paper's main-result cohort uses seeds 6707, 6708, and 6709 for both methods and all four settings. Means and sample standard deviations (`ddof=1`) describe independent search runs, not repeated inference of a fixed mask. Granite 50% TAPE also includes seed 6710, added after the original results were inspected. The original three seeds and the additional run are all retained; the requested 6708–6710 subset and the all-four summary are distinguished from the paper's cohort. The two TAPE search ablations, matched-capacity comparison, and evolution/expert-selection analyses are single-run results. See [results](RESULTS.md) and [report provenance](REPORT_PROVENANCE.md) for the reporting groups.
+The paper's TAPE main-result cohort uses seeds 6707, 6708, and 6709 for all four settings; the supplementary EvoESAP experiments use the same three seeds. Means and sample standard deviations (`ddof=1`) describe independent search runs, not repeated inference of a fixed mask. Granite 50% TAPE also includes seed 6710, added after the original results were inspected. The original three seeds and the additional run are all retained; the requested 6708–6710 subset and the all-four summary are distinguished from the paper's cohort. The two TAPE search ablations, matched-capacity comparison, and evolution/expert-selection analyses are single-run results. See [results](RESULTS.md) and [report provenance](REPORT_PROVENANCE.md) for the reporting groups.
 
 GPU commands recompute model scores. BF16 outputs can vary across hardware and numerical implementations; the release therefore records the software environment, masks, data hashes, and source code. This repository update packages completed experiments; it does not add new GPU experiments.
 

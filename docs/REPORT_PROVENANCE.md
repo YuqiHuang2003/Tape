@@ -1,12 +1,14 @@
 # Report provenance
 
-The latest author-supplied English report is published unchanged as [`report/report.pdf`](../report/report.pdf). Its SHA-256 is `95a973251785ad8aacf47ef9d142673cb838111b287a0674f2810cd5e03e668c` (14 pages, supplied on 29 October 2026). It includes the completed EvoESAP results and the 102.17-minute ERNIE 75% search cost.
+The latest author-supplied English report is published unchanged as [`report/report.pdf`](../report/report.pdf). Its SHA-256 is `5bdfbaa8b4f212af493b011c3f24a8fde3270d257cfac4bf73678f21f4917ba3` (14 pages, supplied on 31 October 2026). It reports TAPE and direct-scoring baselines, and retains the 102.17-minute ERNIE 75% search cost.
 
 The current PDF's LaTeX source was not supplied. Obsolete manuscript sources are excluded rather than presented as the source of this PDF.
 
 ## Results and compute-cost correspondence
 
-Tables 2–3 use seeds 6707–6709 for TAPE and EvoESAP. The release includes each run's final expert mask, candidate trace, training-set selection record, and complete-test scores. EvoESAP is the budget-matched REAP-ranking adaptation described in the [reproduction guide](REPRODUCIBILITY.md), with its saved protocol under `artifacts/evoesap/protocol.json`.
+Tables 2–3 use seeds 6707–6709 for TAPE and evaluate deterministic baselines once. The release includes each search run's final expert mask, candidate trace, training-set selection record, and complete-test scores.
+
+The current PDF cites EvoESAP as related work but no longer includes its experimental results. All 12 completed EvoESAP runs and their implementation remain in the repository as supplementary experiments, not as entries in the paper's main tables. The budget-matched REAP-ranking adaptation is described in the [reproduction guide](REPRODUCIBILITY.md), with its saved protocol under `artifacts/evoesap/protocol.json`.
 
 The additional Granite 50% TAPE seed 6710 remains available but is not part of the paper's three-seed mean. Its requested 6708–6710 summary is 32.24 ± 0.32, whereas the paper's 6707–6709 summary is 32.18 ± 0.42. All four recorded seeds are retained.
 
@@ -23,8 +25,6 @@ The implementation and released records establish the following details. The sup
 | Granite 50% ARC standard deviation | 0.76 for seeds 6707–6709 (Table 3) | The sample standard deviation is 0.768025572 percentage points, which rounds to 0.77. |
 
 All standard deviations are sample standard deviations (`ddof=1`) over search seeds. [Results](RESULTS.md) keeps seed groups explicit. `python scripts/reproduce_tape.py statistics` and `python scripts/reproduce_evoesap.py statistics` compute summaries from the released scores. Deterministic baselines and the ERNIE 75% matched-capacity/evolution diagnostics are evaluated once.
-
-EvoESAP performance-retained entries in Tables 2–3 use rounded displayed Avg values and SDs. The repository computes these ratios from unrounded scores, producing differences of 0.01 percentage points in some means or SDs. Task accuracies and Avg statistics are unchanged.
 
 ## Figures and reproduction
 

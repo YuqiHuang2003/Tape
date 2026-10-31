@@ -1,8 +1,8 @@
 # Main results
 
-Scores use `acc_norm` on the complete official test splits: 2,376 ARC-Easy questions and 500 OpenBookQA questions. Avg is the equal-weight mean of the two task accuracies in each run. TAPE and EvoESAP report the mean ± sample standard deviation across three independent search seeds; SD is in percentage points. Direct-scoring baselines are fixed expert sets evaluated once.
+Scores use `acc_norm` on the complete official test splits: 2,376 ARC-Easy questions and 500 OpenBookQA questions. Avg is the equal-weight mean of the two task accuracies in each run. TAPE and the supplementary EvoESAP experiments report the mean ± sample standard deviation across three independent search seeds; SD is in percentage points. Direct-scoring baselines are fixed expert sets evaluated once.
 
-The main tables follow Tables 2-3 of the latest report: seeds 6707-6709 for both methods at all four settings. The separately requested Granite 50% TAPE subset (6708-6710) and all four recorded runs remain below and in `artifacts/multiseed_summary.json`; its existing reported_seeds field retains that requested subset rather than silently changing the historical metadata. Granite 50% ARC SD is 0.77 when rounded from the recorded scores; the PDF prints 0.76. See [report provenance](REPORT_PROVENANCE.md).
+The main tables follow Tables 2-3 of the 31 October 2026 report: TAPE uses seeds 6707-6709 at all four settings. EvoESAP is no longer reported in those tables; its completed results are retained in a separate supplementary section below. The separately requested Granite 50% TAPE subset (6708-6710) and all four recorded runs remain below and in `artifacts/multiseed_summary.json`; its existing reported_seeds field retains that requested subset rather than silently changing the historical metadata. Granite 50% ARC SD is 0.77 when rounded from the recorded scores; the PDF prints 0.76. See [report provenance](REPORT_PROVENANCE.md).
 
 ## ERNIE
 
@@ -13,13 +13,11 @@ The main tables follow Tables 2-3 of the latest report: seeds 6707-6709 for both
 | 75% | Frequency | 1 | 71.38 | 37.20 | 54.29 | 87.25 |
 | 75% | EAN-Mean | 1 | 74.07 | 42.20 | 58.14 | 93.44 |
 | 75% | REAP+Frequency | 1 | 73.23 | 38.40 | 55.82 | 89.71 |
-| 75% | EvoESAP | 3 | 76.92 ± 0.79 | 42.13 ± 0.50 | 59.53 ± 0.33 | 95.67 ± 0.53 |
 | 75% | TAPE | 3 | 80.86 ± 0.28 | 43.67 ± 0.70 | 62.27 ± 0.35 | 100.07 ± 0.56 |
 | 50% | REAP | 1 | 63.34 | 34.20 | 48.77 | 78.38 |
 | 50% | Frequency | 1 | 59.30 | 29.20 | 44.25 | 71.12 |
 | 50% | EAN-Mean | 1 | 67.42 | 32.60 | 50.01 | 80.38 |
 | 50% | REAP+Frequency | 1 | 61.95 | 34.00 | 47.98 | 77.11 |
-| 50% | EvoESAP | 3 | 61.83 ± 0.70 | 34.47 ± 0.90 | 48.15 ± 0.58 | 77.38 ± 0.93 |
 | 50% | TAPE | 3 | 68.76 ± 0.89 | 33.60 ± 0.72 | 51.18 ± 0.77 | 82.25 ± 1.24 |
 
 ## GRANITE
@@ -30,12 +28,10 @@ The main tables follow Tables 2-3 of the latest report: seeds 6707-6709 for both
 | 75% | REAP | 1 | 46.89 | 30.60 | 38.74 | 73.38 |
 | 75% | Frequency | 1 | 52.69 | 30.40 | 41.55 | 78.69 |
 | 75% | REAP+Frequency | 1 | 53.45 | 32.80 | 43.13 | 81.68 |
-| 75% | EvoESAP | 3 | 52.54 ± 0.38 | 31.80 ± 0.53 | 42.17 ± 0.27 | 79.87 ± 0.52 |
 | 75% | TAPE | 3 | 54.83 ± 0.69 | 33.47 ± 0.90 | 44.15 ± 0.38 | 83.62 ± 0.72 |
 | 50% | REAP | 1 | 33.46 | 26.80 | 30.13 | 57.07 |
 | 50% | Frequency | 1 | 28.49 | 29.00 | 28.75 | 54.45 |
 | 50% | REAP+Frequency | 1 | 35.90 | 28.00 | 31.95 | 60.52 |
-| 50% | EvoESAP | 3 | 36.15 ± 0.68 | 27.20 ± 0.53 | 31.68 ± 0.58 | 60.00 ± 1.09 |
 | 50% | TAPE | 3 | 37.29 ± 0.77 | 27.07 ± 0.12 | 32.18 ± 0.42 | 60.95 ± 0.79 |
 
 ## Individual main-experiment search seeds
@@ -80,9 +76,20 @@ All rows in this diagnostic table use one search seed (6707), not three-seed mea
 | w/o Evolved Identities | 76.14 | 40.00 | 58.07 |
 | TAPE (0 generations) | 80.60 | 41.60 | 61.10 |
 
-## Individual EvoESAP search seeds
+## Supplementary EvoESAP comparison
 
-This is the budget-matched fixed-REAP-ranking baseline, using full-vocabulary teacher-forced ESAP. Each run uses 256 candidates and independent train-holdout selection. Original-operator details and adaptations are recorded in `artifacts/evoesap/protocol.json`. No test scores select candidates or seeds.
+These completed experiments are retained for reference and are not part of the main tables in the 31 October 2026 report. All four settings use seeds 6707-6709; no results or runs have been removed.
+
+| Model | Expert retention | Method | n | ARC-Easy (%) | OpenBookQA (%) | Avg (%) | Performance retained (%) |
+|---|---:|---|---:|---:|---:|---:|---:|
+| ERNIE | 75.0% | EvoESAP | 3 | 76.92 ± 0.79 | 42.13 ± 0.50 | 59.53 ± 0.33 | 95.67 ± 0.53 |
+| ERNIE | 50.0% | EvoESAP | 3 | 61.83 ± 0.70 | 34.47 ± 0.90 | 48.15 ± 0.58 | 77.38 ± 0.93 |
+| GRANITE | 75.0% | EvoESAP | 3 | 52.54 ± 0.38 | 31.80 ± 0.53 | 42.17 ± 0.27 | 79.87 ± 0.52 |
+| GRANITE | 50.0% | EvoESAP | 3 | 36.15 ± 0.68 | 27.20 ± 0.53 | 31.68 ± 0.58 | 60.00 ± 1.09 |
+
+### Individual EvoESAP search seeds
+
+This is the budget-matched fixed-REAP-ranking adaptation, using full-vocabulary teacher-forced ESAP. Each run uses 256 candidates and independent train-holdout selection. Original-operator details and adaptations are recorded in `artifacts/evoesap/protocol.json`. No test scores select candidates or seeds.
 
 | Setting | Search seed | Portable case ID | ARC-Easy (%) | OpenBookQA (%) | Avg (%) |
 |---|---:|---|---:|---:|---:|

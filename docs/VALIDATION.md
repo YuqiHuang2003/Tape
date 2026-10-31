@@ -2,6 +2,8 @@
 
 The current release packages 15 TAPE searches and 12 EvoESAP searches, together with their completed full-test evaluations. Release validation uses CPU checks and saved records; it does not launch new GPU inference or search.
 
+The 31 October 2026 update replaces the report with the latest supplied PDF and separates the paper's main tables from supplementary EvoESAP results. Scientific code and experiment artifacts are unchanged. All 161 tests passed again; an independently extracted ZIP passed 150 CPU-only tests with 11 PyTorch-dependent skips, plus integrity checks for every release file and all 12 EvoESAP runs. The README's main-result cells and report checksum were also checked against the released evidence.
+
 Validation completed on 29 October 2026: all 161 tests passed with PyTorch; the CPU-only environment passed 150 tests and skipped 11 PyTorch-dependent tests. CPU replay matched all 256 candidates and the training-selected winner in each of the 15 TAPE and 12 EvoESAP cases. Both figures and their distribution package regenerated successfully. An independently extracted ZIP installed as version 0.3.0, passed dependency checks and the CPU-only test suite, verified all artifact checksums, recomputed both statistical summaries, and regenerated the figures and their package. These checks use saved records; they are not new model-inference experiments.
 
 | Check | Scope |
